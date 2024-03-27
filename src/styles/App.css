@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(to bottom, #1e1b4b 0%, #312e81 50%, #1e1b4b 100%);
+}
+
+.secondBackground {
+    background-image: linear-gradient(to bottom right, #030712 1%, transparent 99%, #030712 100%);
+}
+
+.navBehavior {
+    position: sticky;
+    top: 0px;
+    backdrop-filter: blur(16px);
+    z-index: 2;
+    border-bottom: 1px;
+    /* border:  */
+}
+
+.aboutBehavior {
+    z-index: 1;
+    position: relative;
+}

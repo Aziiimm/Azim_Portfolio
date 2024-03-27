@@ -1,0 +1,60 @@
+a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.bar {
+    color: white;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    font-family: sans-serif;
+}
+
+.barItems {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+}
+
+.main {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    margin-left: 11rem;
+}
+
+.rightGrid {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.sections {
+    display: flex;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    gap: 2.5rem;
+}
+
+
+.navButtons:hover {
+    color: rgb(199 210 254);
+}
+
+.socials {
+    display: flex;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    gap: 1.25rem;
+    border-left: 1px solid white;
+}

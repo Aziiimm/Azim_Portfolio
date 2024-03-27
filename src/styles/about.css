@@ -1,0 +1,56 @@
+section {
+    font-family: sans-serif;
+}
+
+.hero {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100dvh;
+}
+
+.aboutContainer {
+    display: flex;
+    gap: 10rem;
+    margin-top: 8rem;
+    z-index: 1;
+}
+
+.bioContainer {
+    margin-top: 0;
+    max-width: 25em;
+}
+
+img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 9999px;
+    outline-style: solid;
+    outline-color: #c7d2fe;
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    z-index: 1;
+    margin-top: 10%;
+}
+
+.hello {
+    border-bottom: 2px solid white;
+    font-size: 2em;
+    display: inline-block;
+    position: relative;
+}
+
+.aboutme {
+    display: block;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.shortbio {
+    display: block;
+    font-size: 1em;
+    margin-top: 1em;
+    line-height: 1.5rem;
+}
