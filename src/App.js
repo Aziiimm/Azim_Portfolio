@@ -3,13 +3,14 @@ import Navbar from './components/navbar';
 import StarrySky from './components/starrynight';
 import About from './components/about';
 import React from 'react';
+import Skills from './components/skills';
+import Projects from './components/projects';
 
 function App() {
 
   return (
     
-    <div>
-      <div class = 'secondBackground'>
+    <div class = 'secondBackground'>
         <StarrySky/>
         
         <div class = 'navBehavior'> 
@@ -18,10 +19,17 @@ function App() {
 
         <div className = 'aboutBehavior'> 
           <About/>
-          <About/>
+        </div>
+          
+        <div clasName = 'skillsBehavior'>
+          <Skills/>
         </div>
 
-      </div>
+        <div className = 'projectBehavior'>
+          <Projects/>
+        </div>
+
+
     </div>
 
   );

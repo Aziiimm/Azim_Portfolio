@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 import anime from 'animejs';
 import '../styles/starrynight.css';
 
-// Twinkling Night Sky by Sharna
-
 class StarrySky extends Component {
   state = {
     num: 60,

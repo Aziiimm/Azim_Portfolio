@@ -7,13 +7,13 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100dvh;
+    height: fit-content;
 }
 
 .aboutContainer {
     display: flex;
     gap: 10rem;
-    margin-top: 8rem;
+    margin-top: 6rem;
     z-index: 1;
 }
 
@@ -22,29 +22,32 @@ section {
     max-width: 25em;
 }
 
-img {
+.coverpicture {
     width: 20rem;
     height: 20rem;
     border-radius: 9999px;
-    outline-style: solid;
-    outline-color: #c7d2fe;
+    outline: 1px solid #c7d2fe;
     font-weight: 700;
     font-size: 1.875rem;
     line-height: 2.25rem;
-    z-index: 1;
     margin-top: 10%;
+    transition: all .25s ease-in-out;
+}
+
+.coverpicture:hover {
+    outline: 2.5px solid white;
 }
 
 .hello {
     border-bottom: 2px solid white;
-    font-size: 2em;
+    font-size: 1.2em;
     display: inline-block;
     position: relative;
 }
 
 .aboutme {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 2rem;
 }
 

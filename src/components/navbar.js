@@ -1,5 +1,4 @@
-import { AiFillGithub } from "react-icons/ai";
-import { AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import '../styles/navbar.css'
 
 function Navbar() {
@@ -9,16 +8,16 @@ function Navbar() {
         <nav className = 'bar'>
             <div className = 'barItems'>
                 <div><a className = 'main' href= "/">Azim Rahat</a></div>
-            <div className = 'rightGrid'>
-                <div>
+                <div className = 'rightGrid'>
+               
                     <div className = 'sections'>
                         <a className = 'navButtons' href = '#about'>About</a>
                         <a className = 'navButtons' href = '#skills'>Skills</a>
                         <a className = 'navButtons' href = '#project'>Projects</a>
-                        <a className = 'navButtons' href = '#resume'>Resume</a>
                         <a className = 'navButtons' href = '#contact'>Contact</a>
+                        <a className = 'navButtons' href = '#resume'>Resume</a>
                     </div>
-                </div>
+
                     <div className = 'socials'>
                         <a class = 'navButtons' 
                             href = 'https://github.com/Aziiimm' 
@@ -31,7 +30,8 @@ function Navbar() {
                             <AiFillLinkedin />
                         </a>
                     </div>
-            </div>
+                    
+                </div>
             </div>
         </nav>
 

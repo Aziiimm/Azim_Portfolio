@@ -41,7 +41,9 @@ a:link, a:visited {
     gap: 2.5rem;
 }
 
-
+.navButtons {
+    transition: color .25s ease-in-out;
+}
 .navButtons:hover {
     color: rgb(199 210 254);
 }

@@ -1,12 +1,12 @@
 import React from 'react'
-import coverpicture from '../coverpicture.jpeg'
+import coverpicture from '../assets/coverpicture.jpeg'
 import '../styles/about.css'
 
 const About = () => {
 
 return (
 
-  <section className = 'hero'>
+  <section id = 'about' className = 'hero'>
 
         <div className = 'aboutContainer'>
             
@@ -18,12 +18,15 @@ return (
             </div>
 
             <div className = 'bioContainer'>
+
               <h1>
                 <span className = 'hello'>Hello Everyone,</span>
               </h1>
+
               <div>
+                
                   <span className = 'aboutme'>
-                    My name is <strong>Azim</strong>, and I am an
+                    My name is <strong>Azim</strong>, and I'm an
                   </span>
                   <span className = 'aboutme'>  
                     Aspiring Software Engineer
@@ -39,10 +42,9 @@ return (
                   <span className = 'shortbio'>
                     When I'm not on the computer, I'm usually playing basketball, 
                     baking, reading sci-fi books, or playing the newest action RPG games. 
-
                   </span>
-
               </div>
+
             </div>
 
         </div>
