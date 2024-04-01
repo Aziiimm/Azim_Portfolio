@@ -42,10 +42,12 @@ a:link, a:visited {
 }
 
 .navButtons {
-    transition: color .25s ease-in-out;
+    transition: all .25s ease-in-out;
 }
 .navButtons:hover {
     color: rgb(199 210 254);
+    transform: scale(1.1);
+    content: attr(data-title);
 }
 
 .socials {

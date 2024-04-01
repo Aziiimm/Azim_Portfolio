@@ -20,7 +20,7 @@ const Skills = () => {
     <section className = 'skillsContainer'>
 
       <h1 id = 'skills' className = 'title'>
-        <span className = 'techStack'>
+        <span className = 'skillsHead'>
           Tech Stack
         </span>
       </h1>
