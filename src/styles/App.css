@@ -20,6 +20,10 @@ body {
     z-index: 1;
 }
 
-.skills {
+.skillsBehavior {
+    z-index: 1;
+}
+
+.projectBehavior {
     z-index: 1;
 }

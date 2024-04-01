@@ -1,7 +1,7 @@
 import '../styles/projects.css'
 import project1 from '../assets/wip.jpeg'
 import portfolioProject from '../assets/portfolio.png'
-import React from 'react'
+import React from "react";
 
 const Projects = () => {
   
@@ -16,13 +16,9 @@ const Projects = () => {
       <div className = 'projectsList'>
 
         <div className = 'project-box'>
-
             <span>Portfolio Website</span>
             <img src = {portfolioProject} alt = 'First Project'></img>
-            <p> This is my portfolio website FJALFJALKFJLKAFJLAJFLK AFJLKAFJLKAFJLFFA:
-                LFKJALFJAL K FJALKFJLAKFJLKAJFLJFLAKJFLKAJFLAKJFLKJAFJ
-                FJLJALFKJLK JLFJALKJFLKJFAL KJFLKJAFLKJFLKAJ LJFALKF
-                 LJALJFLAJF LJF LJAFL JALFJ LFAFLJ
+            <p> This is my portfolio website built using React!
             </p>
             <div className = 'project-stack'>
               <div>JavaScript</div>
@@ -30,16 +26,20 @@ const Projects = () => {
               <div>HTML</div>
               <div>CSS</div>
             </div>
-
         </div>
 
         <div className = 'project-box'>
-            <span>Portfolio Website</span>
-            <img className = 'projectImage' src = {portfolioProject} alt = 'First Project'></img>
-            <p>This is my portfolio website</p>
+            <span>WIP</span>
+            <img src = {project1} alt = 'First Project'></img>
+            <p> A full stack application
+            </p>
+            <div className = 'project-stack'>
+              <div>JavaScript</div>
+              <div>React</div>
+              <div>HTML</div>
+              <div>CSS</div>
+            </div>
         </div>
-
-
 
       </div>
                   

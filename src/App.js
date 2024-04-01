@@ -5,6 +5,7 @@ import About from './components/about';
 import React from 'react';
 import Skills from './components/skills';
 import Projects from './components/projects';
+import Contact from './components/contact'
 
 function App() {
 
@@ -27,6 +28,10 @@ function App() {
 
         <div className = 'projectBehavior'>
           <Projects/>
+        </div>
+
+        <div className = 'contactBehavior'>
+          <Contact/>
         </div>
 
 
