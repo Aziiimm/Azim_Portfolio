@@ -1,0 +1,63 @@
+.aboutContainer {
+    display: flex;
+    gap: 10rem;
+    margin-top: 6rem;
+    z-index: 1;
+    height: fit-content;
+}
+
+.contactHead {
+    border-bottom: 1px solid white;
+    display: inline-block;
+    font-size: 1.3rem;
+    color: white;
+    font-family: sans-serif;
+}
+
+.contactGrid {
+    height: fit-content;
+    margin: 0 20em 2em 20em;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5em;
+}
+
+.contact-card {
+    height: 75%;
+    width: 50%;
+    border: .5px solid white;
+    background-color: rgb(30 27 75);
+    z-index: 1;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.prompt {
+    color: white;
+    font-family: sans-serif;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+.field {
+    background-color: rgb(48, 43, 115);
+    border: .25px solid white;
+    border-radius: .5em;
+    margin-top: 1em;
+    height: 2em;
+}
+
+.message-field {
+    background-color: rgb(48, 43, 115);
+    border: .25px solid white;
+    border-radius: .5em;
+    margin-top: 1em;
+    height: 6em;
+}
