@@ -25,15 +25,18 @@
     row-gap: 1em;
     margin: 0 auto 0 auto;
     justify-items: center;
+    border: .25px solid #c7d2fe;
+    padding: 2em;
+    border-radius: 1em; 
 }
 
 .techs {
     box-sizing: border-box;
     border-radius: 1em;
-    border: .25px solid #c7d2fe;
+    /* border: .25px solid #c7d2fe; */
+    /* background-color: rgb(30 27 75); */
     width: 7rem;
     height: 6rem;
-    background-color: rgb(30 27 75);
     display: flex;
     justify-content: center;
     align-items: center;

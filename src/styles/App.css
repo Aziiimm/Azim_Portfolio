@@ -4,7 +4,7 @@ body {
 }
 
 .secondBackground {
-    background-image: linear-gradient(to bottom right, #030712 1%, transparent 99%, #030712 100%);
+    background-image: linear-gradient(to bottom right, #030712 1%, transparent 100%);
     z-index: -1;
 }
 

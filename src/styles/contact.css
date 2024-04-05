@@ -1,7 +1,4 @@
-.aboutContainer {
-    display: flex;
-    gap: 10rem;
-    margin-top: 6rem;
+.contactContainer {
     z-index: 1;
     height: fit-content;
 }
@@ -17,24 +14,40 @@
 .contactGrid {
     height: fit-content;
     margin: 0 20em 2em 20em;
-
-
     display: flex;
-    justify-content: center;
     align-items: center;
-
     gap: 5em;
 }
 
 .contact-card {
-    height: 75%;
-    width: 50%;
+    height: fit-content;
+    width: 30em;
     border: .5px solid white;
     background-color: rgb(30 27 75);
     z-index: 1;
     border-radius: 1em;
     display: flex;
     flex-direction: column;
+    margin-bottom: 4em;
+}
+
+.send {
+    margin: 1.5em auto;
+    width: 5rem;
+    color: white;
+    font-weight: 700;
+    background-color: rgb(48, 43, 115);
+    border-radius: 1em;
+    border: 1px solid white;
+    padding: .7em;
+    text-align: center;
+    justify-content: center;
+    transition: all 0.25s ease-in-out;
+}
+
+.send:hover {
+    cursor: pointer;
+    background-color: rgb(30 27 90);
 }
 
 .prompt {
@@ -48,16 +61,133 @@
 
 .field {
     background-color: rgb(48, 43, 115);
-    border: .25px solid white;
+    border: .5px solid gray;
     border-radius: .5em;
     margin-top: 1em;
-    height: 2em;
+    min-height: 2em;
+    color: white;
+    text-align: left;
+    text-indent: 10px;
+    display: flex;
+    font-size: 15px;
+    transition: all .15s ease-in-out;
+}
+
+.field:hover {
+    border: .5px solid white;
 }
 
 .message-field {
     background-color: rgb(48, 43, 115);
-    border: .25px solid white;
+    border: .25px solid gray;
     border-radius: .5em;
     margin-top: 1em;
-    height: 6em;
+    min-height: 6em;
+    max-height: 20em;
+    color: white;
+    display: flex;
+    text-align: left;
+    padding: 10px;
+    font-size: 15px;
+    justify-content: center;
+    resize: vertical;
+    overflow-wrap: break-word;
+    font-family: sans-serif;
+    transition: all .15s ease-in-out;
+}
+
+.message-field:hover {
+    border: .5px solid white
+}
+
+
+.information-container {
+    color: white;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1.5em;
+}
+
+.contact-type {
+    display: flex;
+    font-size: 28px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: rgb(48, 43, 115);
+    border: .5px solid white;
+    transition: all .25s ease-in-out;
+    border-radius: 9999px;
+    height: 1.4em;
+    width: 1.4em;
+    z-index: 1;
+}
+
+.contact-type:hover {
+    transform: scale(1.1);
+    color: rgb(199 210 254);
+    cursor: pointer;
+}
+
+.information {
+    display: flex;
+    align-items: center;
+    gap: .7em;
+    font-size: 16px;
+}
+
+.information-socials {
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+    border-top: 1px solid white;
+    padding-top: 1em;
+}
+
+.custom-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    z-index: 50;
+    transition: opacity 0.25s ease-out;
+}
+
+.custom-alert::after {
+    opacity: 0;
+}
+
+.custom-alert-content {
+    background-color: rgb(48, 43, 115);
+    padding: 0 1em 0 1em;
+    text-align: center;
+    border-radius: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: sans-serif;
+    border: 1px solid white;
+}
+
+
+.footer { 
+    border-top: .5px solid white;
+    padding: 2rem;
+    bottom: 20px;
+    left: 0;
+    bottom: 20px; /* Adjust this value as needed */
+    width: 100%;
+    text-align: center;
+    color: white;
+
+    font-size: x-small;
+    font-family: sans-serif;
+    text-align: left;
+    text-indent: 5rem;
+    z-index: 1;
 }
