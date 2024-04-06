@@ -17,6 +17,7 @@
     display: flex;
     align-items: center;
     gap: 5em;
+    justify-content: center;
 }
 
 .contact-card {
