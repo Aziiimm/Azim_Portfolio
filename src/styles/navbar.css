@@ -15,6 +15,7 @@ a:link, a:visited {
     display: flex;
     justify-content: space-between;
     padding-top: 1.5rem;
+    flex-wrap: nowrap;
 }
 
 .main {
@@ -22,11 +23,14 @@ a:link, a:visited {
     line-height: 2rem;
     font-weight: 700;
     margin-left: 11rem;
+    flex-wrap: nowrap;  
+    white-space: nowrap;
 }
 
 .rightGrid {
     display: flex;
     gap: 0.5rem;
+    flex-wrap: nowrap;
 }
 
 .sections {
@@ -60,4 +64,72 @@ a:link, a:visited {
     padding-bottom: 0.5rem;
     gap: 1.25rem;
     border-left: 1px solid white;
+    flex-wrap: nowrap;
+}
+
+.burger-menu {
+    display: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+@media (max-width: 850px) {
+    .hide {
+        display: none;
+    }
+
+    .burger-menu {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5rem;
+        height: 2.5rem;
+        width: 2.5rem;
+        min-width: 2.5rem;
+        min-height: 2.5rem;
+        pointer-events: all;
+    }
+
+    .burger-menu:hover {
+        background-color: var(--gray-menu-button-hover);
+    }
+
+    .burger-menu:focus {
+        outline: 1px solid var(--primary);
+    }
+
+    .burger-menu svg {
+        height: 1.5rem;
+        stroke: var(--gray-menu-button);
+        width: 1.5rem;
+    }
+
+    .rightGrid {
+        display: none;
+        flex-direction: column;
+        background-color: white; /* Add background color to menu */
+        padding: 1rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 999; /* Ensure it's above other content */
+      }
+    
+      /* Show menu items when burger menu is clicked */
+      .rightGrid.open {
+        display: flex;
+      }
+    
+      .rightGrid .sections {
+        margin-bottom: 1rem;
+      }
+    
+      /* Style for burger menu lines when open */
+      .burger-menu.open line {
+        stroke: #000;
+      }
 }

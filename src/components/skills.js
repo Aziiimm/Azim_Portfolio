@@ -20,7 +20,7 @@ import {
 const Skills = () => {
   return (
     <section className="skillsContainer">
-      <h1 id="skills" className="title">
+      <h1 className="title">
         <span className="skillsHead">Tech Stack</span>
       </h1>
 
@@ -111,7 +111,7 @@ const Skills = () => {
 
         <div className="techs">
           <div>
-            <img className="logo" src={nodejs} alt="undefined" />
+            <img id="projects" className="logo" src={nodejs} alt="undefined" />
             Node.js
           </div>
         </div>

@@ -55,7 +55,7 @@ const Contact = () => {
 
   return (
     <div className="contactContainer">
-      <h1 id="contact" className="title">
+      <h1 className="title">
         <span className="contactHead">Contact Me</span>
       </h1>
 

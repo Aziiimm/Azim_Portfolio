@@ -6,7 +6,7 @@ import React from "react";
 const Projects = () => {
   return (
     <div className="projectsContainer">
-      <h1 id="projects" className="title">
+      <h1 className="title">
         <span className="projectsHead">Projects</span>
       </h1>
 
@@ -39,7 +39,7 @@ const Projects = () => {
               TEST TEST TEST
             </p>
 
-            <div className="project-stack">
+            <div id="contact" className="project-stack">
               <div>JavaScript</div>
               <div>React</div>
               <div>HTML</div>
