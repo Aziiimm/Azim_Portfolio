@@ -1,6 +1,6 @@
 import "../styles/projects.css";
-import project1 from "../assets/wip.jpeg";
 import portfolioProject from "../assets/portfolio.png";
+import textgame from "../assets/textgame.gif"
 import React from "react";
 
 const Projects = () => {
@@ -30,9 +30,9 @@ const Projects = () => {
         </div>
 
         <div className="project-card">
-          <img src={project1} alt="project 2"></img>
+          <img src={textgame} alt="project 2"></img>
           <div className="content-slate">
-            <a href="./">A Work in Progress</a>
+            <a href="./">Text-Based Adventure Game</a>
             <p>
               Testing this out to make it look nice and presentable for the
               future! This project will be a full stack application! TEST TEST
@@ -40,10 +40,7 @@ const Projects = () => {
             </p>
 
             <div id="contact" className="project-stack">
-              <div>JavaScript</div>
-              <div>React</div>
-              <div>HTML</div>
-              <div>CSS</div>
+              <div>C++</div>
             </div>
           </div>
         </div>
