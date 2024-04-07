@@ -94,13 +94,12 @@
     resize: vertical;
     overflow-wrap: break-word;
     font-family: sans-serif;
-    transition: all .15s ease-in-out;
+    transition: border .15s ease-in-out;
 }
 
 .message-field:hover {
     border: .5px solid white
 }
-
 
 .information-container {
     color: white;
@@ -121,9 +120,10 @@
     border: .5px solid white;
     transition: all .25s ease-in-out;
     border-radius: 9999px;
-    height: 1.4em;
-    width: 1.4em;
+    height: auto;
+    width: auto;
     z-index: 1;
+    padding: 10px;
 }
 
 .contact-type:hover {
@@ -133,10 +133,14 @@
 }
 
 .information {
+    text-overflow: clip;
+    width: fit-content;
+    white-space: nowrap;
     display: flex;
     align-items: center;
     gap: .7em;
     font-size: 16px;
+    text-overflow: wrap;
 }
 
 .information-socials {
@@ -145,6 +149,7 @@
     gap: 2em;
     border-top: 1px solid white;
     padding-top: 1em;
+    width: fit-content;
 }
 
 .custom-alert {
@@ -175,20 +180,43 @@
     border: 1px solid white;
 }
 
-
 .footer { 
     border-top: .5px solid white;
-    padding: 2rem;
-    bottom: 20px;
+    padding: 2rem 0 2rem 0;
     left: 0;
-    bottom: 20px;
-    width: 100%;
-    text-align: center;
-    color: white;
 
+    width: 100%;
+    color: white;
     font-size: x-small;
     font-family: sans-serif;
     text-align: left;
     text-indent: 5rem;
     z-index: 1;
 }
+
+
+@media (max-width: 850px) {
+            
+    .contactGrid{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-card {
+        width: 90%;
+        height: auto;
+    }
+
+    .information-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto 3em auto;
+        padding: 0;
+    }
+
+}
+

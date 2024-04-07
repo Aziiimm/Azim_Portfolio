@@ -70,7 +70,7 @@ const Skills = () => {
         <div className="techs">
           <div>
             <img className="logo" src={tailwindcss} alt="undefined" />
-            Tailwind CSS
+            Tailwind
           </div>
         </div>
 

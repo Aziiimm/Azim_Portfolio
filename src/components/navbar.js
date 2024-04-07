@@ -11,8 +11,6 @@ function Navbar() {
 
   return (
 
-
-
     <nav className="bar">
       <div className="barItems">
         <div>
@@ -79,8 +77,6 @@ function Navbar() {
             </a>
           </div>
         </div>
-
-        <button aria-label = 'Open menu' className = 'burger-menu' type = 'button'> </button> 
 
       </div>
     </nav>

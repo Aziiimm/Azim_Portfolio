@@ -33,8 +33,6 @@
 .techs {
     box-sizing: border-box;
     border-radius: 1em;
-    /* border: .25px solid #c7d2fe; */
-    /* background-color: rgb(30 27 75); */
     width: 7rem;
     height: 6rem;
     display: flex;
@@ -45,7 +43,7 @@
     transition: all .25s ease-in-out;
 }
 
-.techs:hover {
+.techs:hover, .techs:active {
     cursor: pointer;
     background-color: rgb(30 27 90);
     transform: scale(1.05);
@@ -61,4 +59,38 @@
 .logo {
     height: 2.5rem;
     padding: 1em;
+}
+
+@media (max-width: 850px) {
+
+    .techs:hover {
+        background-color: initial;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        border: 0;
+    }
+    .techs:hover {
+        background-color: initial;
+    }
+
+}
+
+@media (max-width: 300px) {
+
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .techs:hover {
+        background-color: initial;
+    }
+
 }

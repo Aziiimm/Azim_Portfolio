@@ -35,7 +35,7 @@ section {
 }
 
 .coverpicture:hover {
-    outline: 1.5px solid white;
+    outline: 1.5px solid #c7d2fe;
     transform: scale(1.01);
 }
 
@@ -57,4 +57,42 @@ section {
     font-size: 1em;
     margin-top: 1em;
     line-height: 1.5rem;
+}
+
+@media (max-width: 850px) {
+
+    .aboutContainer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .aboutContainer img {
+        width: 50vw;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .bioContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aboutme {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .shortbio {
+        margin: 1.5rem;
+        text-align: center;
+    }
+
 }

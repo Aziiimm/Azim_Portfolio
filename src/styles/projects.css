@@ -23,6 +23,7 @@
     display: flex;
     gap: .5em;
     z-index: 40;
+    flex-wrap: wrap;
 }
 
 .project-stack div {
@@ -89,6 +90,7 @@
     visibility: hidden;
     opacity: 0;
     transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    flex-wrap: nowrap;  
 }
 
 .content-slate a {
@@ -100,4 +102,35 @@
 
 .content-slate p {
     font-size: small;
+}
+
+@media (max-width: 650px) {
+
+    .project-card {
+        margin: 0 1rem 0 1rem;
+    }
+
+    .content-slate {
+        margin: 0 0 1rem 1rem;
+    }
+    
+    .content-slate a {
+        font-size: small;
+        margin: 0 0 .5em 0;
+    }
+    .content-slate p {
+        font-size: x-small;
+        width: auto;
+        margin: 0 0 .5em 0;
+    }
+    
+    .project-stack {
+        gap: 5px 5px;
+        margin: 0;
+    }
+
+    .project-stack div {
+        font-size: 8px;
+        padding: .3rem .2rem .3rem .2rem;
+    }
 }

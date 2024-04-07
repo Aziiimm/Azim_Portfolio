@@ -9,6 +9,9 @@ a:link, a:visited {
     border-bottom: 1px solid white;
     background-color: transparent;
     font-family: sans-serif;
+    backdrop-filter: blur(24px);
+    top: 0px;
+    margin: 0;
 }
 
 .barItems {
@@ -80,56 +83,59 @@ a:link, a:visited {
         display: none;
     }
 
+    .main {
+        margin-left: 1rem;
+        margin-right: auto;
+        align-items: center;
+        position: absolute;
+        bottom: 20px;
+    }
+    
     .burger-menu {
+        position: relative;
+        bottom: 5px;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        font-weight: 700;
         color: white;
         display: flex;
         align-items: center;
-        justify-content: center;
-        border-radius: 0.5rem;
         height: 2.5rem;
         width: 2.5rem;
         min-width: 2.5rem;
         min-height: 2.5rem;
-        pointer-events: all;
-    }
-
-    .burger-menu:hover {
-        background-color: var(--gray-menu-button-hover);
-    }
-
-    .burger-menu:focus {
-        outline: 1px solid var(--primary);
-    }
-
-    .burger-menu svg {
-        height: 1.5rem;
-        stroke: var(--gray-menu-button);
-        width: 1.5rem;
+        justify-content: center;
     }
 
     .rightGrid {
         display: none;
         flex-direction: column;
-        background-color: white; /* Add background color to menu */
-        padding: 1rem;
+        background-color: #030713;
+        border-bottom: 0.5px solid white;
+        padding: 1rem 1rem 1rem 0;
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
-        z-index: 999; /* Ensure it's above other content */
+        z-index: 999;
       }
-    
-      /* Show menu items when burger menu is clicked */
+
+      .socials {
+        border: 0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+      }
+
+      .sections {
+        padding: 1rem 0 1rem 0;
+        justify-content: center;
+        width: 100vw;
+      }
+
       .rightGrid.open {
         display: flex;
-      }
-    
-      .rightGrid .sections {
-        margin-bottom: 1rem;
-      }
-    
-      /* Style for burger menu lines when open */
-      .burger-menu.open line {
-        stroke: #000;
       }
 }
