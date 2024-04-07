@@ -14,7 +14,13 @@ const Projects = () => {
         <div className="project-card">
           <img src={calculatorproject} alt="project 1"></img>
           <div className="content-slate">
-            <a href="https://github.com/Aziiimm/Calcify">Calcify</a>
+            <a
+              href="https://github.com/Aziiimm/Calcify"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Calcify
+            </a>
             <p>A calculator capable of solving basic calculus functions!</p>
 
             <div className="project-stack">
@@ -29,7 +35,13 @@ const Projects = () => {
         <div className="project-card">
           <img src={textgame} alt="project 2"></img>
           <div className="content-slate">
-            <a href="https://github.com/Aziiimm/Text-Based-Adventure-Game">Text-Based Adventure Game</a>
+            <a
+              href="https://github.com/Aziiimm/Text-Based-Adventure-Game"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Text-Based Adventure Game
+            </a>
             <p>
               A story driven adventure game where users navigate through a
               fantasy world with different path options.
