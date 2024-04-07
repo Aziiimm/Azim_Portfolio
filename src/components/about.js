@@ -32,7 +32,7 @@ const About = () => {
               expanding my skillset!
             </span>
 
-            <span id='skills' className="shortbio">
+            <span id="skills" className="shortbio">
               When I'm not on the computer, I'm usually playing basketball,
               baking, reading sci-fi books, or playing the newest action RPG
               games.

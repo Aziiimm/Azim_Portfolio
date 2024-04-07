@@ -1,6 +1,6 @@
 import "../styles/projects.css";
-import portfolioProject from "../assets/portfolio.png";
-import textgame from "../assets/textgame.gif"
+import calculatorproject from "../assets/calculatorproject.gif";
+import textgame from "../assets/textgame.gif";
 import React from "react";
 
 const Projects = () => {
@@ -12,19 +12,16 @@ const Projects = () => {
 
       <div className="projectsList">
         <div className="project-card">
-          <img src={portfolioProject} alt="project 1"></img>
+          <img src={calculatorproject} alt="project 1"></img>
           <div className="content-slate">
-            <a href="./">My Portfolio</a>
-            <p>
-              Testing this out to make it look nice and presentable for the
-              future!
-            </p>
+            <a href="./">Calcify</a>
+            <p>A calculator capable of solving basic calculus functions!</p>
 
             <div className="project-stack">
               <div>JavaScript</div>
               <div>React</div>
               <div>HTML</div>
-              <div>CSS</div>
+              <div>Tailwind</div>
             </div>
           </div>
         </div>
@@ -34,9 +31,8 @@ const Projects = () => {
           <div className="content-slate">
             <a href="./">Text-Based Adventure Game</a>
             <p>
-              Testing this out to make it look nice and presentable for the
-              future! This project will be a full stack application! TEST TEST
-              TEST TEST TEST
+              A story driven adventure game where users navigate through a
+              fantasy world with different path options.
             </p>
 
             <div id="contact" className="project-stack">

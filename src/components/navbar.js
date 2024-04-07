@@ -1,16 +1,13 @@
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { IoDocument } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { useState } from 'react';
+import { useState } from "react";
 import "../styles/navbar.css";
 
 function Navbar() {
-  
-  
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-
     <nav className="bar">
       <div className="barItems">
         <div>
@@ -19,18 +16,16 @@ function Navbar() {
           </a>
         </div>
 
-
-        <button 
-        aria-label = 'Open menu'
-        className = 'burger-menu'
-        type ='button'
-        onClick={() => setIsOpen(!isOpen)}
+        <button
+          aria-label="Open menu"
+          className="burger-menu"
+          type="button"
+          onClick={() => setIsOpen(!isOpen)}
         >
           <GiHamburgerMenu />
         </button>
 
-
-        <div className={`rightGrid ${isOpen ? 'open' : ''}`}>
+        <div className={`rightGrid ${isOpen ? "open" : ""}`}>
           <div className="sections">
             <a className="navButtons" href="#about">
               About
@@ -77,7 +72,6 @@ function Navbar() {
             </a>
           </div>
         </div>
-
       </div>
     </nav>
   );

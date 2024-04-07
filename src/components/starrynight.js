@@ -1,13 +1,16 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import anime from 'animejs';
-import '../styles/starrynight.css';
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import anime from "animejs";
+import "../styles/starrynight.css";
 
 class StarrySky extends Component {
   state = {
     num: 60,
     vw: Math.max(document.documentElement.clientWidth, window.innerWidth || 0),
-    vh: Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
+    vh: Math.max(
+      document.documentElement.clientHeight,
+      window.innerHeight || 0
+    ),
   };
 
   starryNight = () => {
@@ -15,11 +18,11 @@ class StarrySky extends Component {
       targets: "#sky .star",
       opacity: [
         { duration: 700, value: "0" },
-        { duration: 700, value: "1" }
+        { duration: 700, value: "1" },
       ],
       easing: "linear",
       loop: true,
-      delay: (el, i) => 50 * i
+      delay: (el, i) => 50 * i,
     });
   };
 
@@ -31,7 +34,7 @@ class StarrySky extends Component {
       delay: (el, i) => 1000 * i,
       opacity: [{ duration: 700, value: "1" }],
       width: [{ value: "150px" }, { value: "0px" }],
-      translateX: 350
+      translateX: 350,
     });
   };
 
@@ -77,7 +80,7 @@ class StarrySky extends Component {
               className="wish"
               style={{
                 left: `${this.getRandomY()}px`,
-                top: `${this.getRandomX()}px`
+                top: `${this.getRandomX()}px`,
               }}
             />
           ))}

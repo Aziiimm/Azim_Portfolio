@@ -1,141 +1,142 @@
-a:link, a:visited {
-    text-decoration: none;
-    color: white;
+a:link,
+a:visited {
+  text-decoration: none;
+  color: white;
 }
 
 .bar {
-    color: white;
-    padding-bottom: 0.75rem;
-    border-bottom: 1px solid white;
-    background-color: transparent;
-    font-family: sans-serif;
-    backdrop-filter: blur(24px);
-    top: 0px;
-    margin: 0;
+  color: white;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  font-family: sans-serif;
+  backdrop-filter: blur(24px);
+  top: 0px;
+  margin: 0;
 }
 
 .barItems {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 1.5rem;
-    flex-wrap: nowrap;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  flex-wrap: nowrap;
 }
 
 .main {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: 700;
-    margin-left: 11rem;
-    flex-wrap: nowrap;  
-    white-space: nowrap;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  margin-left: 11rem;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .rightGrid {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: nowrap;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
 }
 
 .sections {
-    display: flex;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-weight: 700;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    gap: 2.5rem;
+  display: flex;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  gap: 2.5rem;
 }
 
 .navButtons {
-    transition: all .25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 .navButtons:hover {
-    color: rgb(199 210 254);
-    transform: scale(1.1);
+  color: rgb(199 210 254);
+  transform: scale(1.1);
 }
 
 .socials {
-    display: flex;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    font-weight: 700;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    gap: 1.25rem;
-    border-left: 1px solid white;
-    flex-wrap: nowrap;
+  display: flex;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  gap: 1.25rem;
+  border-left: 1px solid white;
+  flex-wrap: nowrap;
 }
 
 .burger-menu {
-    display: none;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
+  display: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 @media (max-width: 850px) {
-    .hide {
-        display: none;
-    }
+  .hide {
+    display: none;
+  }
 
-    .main {
-        margin-left: 1rem;
-        margin-right: auto;
-        align-items: center;
-        position: absolute;
-        bottom: 20px;
-    }
-    
-    .burger-menu {
-        position: relative;
-        bottom: 5px;
-        font-size: 1.5rem;
-        line-height: 1.5rem;
-        font-weight: 700;
-        color: white;
-        display: flex;
-        align-items: center;
-        height: 2.5rem;
-        width: 2.5rem;
-        min-width: 2.5rem;
-        min-height: 2.5rem;
-        justify-content: center;
-    }
+  .main {
+    margin-left: 1rem;
+    margin-right: auto;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+  }
 
-    .rightGrid {
-        display: none;
-        flex-direction: column;
-        background-color: #030713;
-        border-bottom: 0.5px solid white;
-        padding: 1rem 1rem 1rem 0;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        z-index: 999;
-      }
+  .burger-menu {
+    position: relative;
+    bottom: 5px;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+    justify-content: center;
+  }
 
-      .socials {
-        border: 0;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        width: 100vw;
-      }
+  .rightGrid {
+    display: none;
+    flex-direction: column;
+    background-color: #030713;
+    border-bottom: 0.5px solid white;
+    padding: 1rem 1rem 1rem 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
 
-      .sections {
-        padding: 1rem 0 1rem 0;
-        justify-content: center;
-        width: 100vw;
-      }
+  .socials {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
 
-      .rightGrid.open {
-        display: flex;
-      }
+  .sections {
+    padding: 1rem 0 1rem 0;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  .rightGrid.open {
+    display: flex;
+  }
 }

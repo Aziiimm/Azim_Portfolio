@@ -1,98 +1,96 @@
 section {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 .hero {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: fit-content;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
 }
 
 .aboutContainer {
-    display: flex;
-    gap: 10rem;
-    margin-top: 6rem;
-    z-index: 1;
+  display: flex;
+  gap: 10rem;
+  margin-top: 6rem;
+  z-index: 1;
 }
 
 .bioContainer {
-    margin-top: 0;
-    max-width: 25em;
+  margin-top: 0;
+  max-width: 25em;
 }
 
 .coverpicture {
-    width: 20rem;
-    height: 20rem;
-    border-radius: 9999px;
-    outline: 1px solid #c7d2fe;
-    font-weight: 700;
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-    margin-top: 10%;
-    transition: all .25s ease-in-out;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 9999px;
+  outline: 1px solid #c7d2fe;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  margin-top: 10%;
+  transition: all 0.25s ease-in-out;
 }
 
 .coverpicture:hover {
-    outline: 1.5px solid #c7d2fe;
-    transform: scale(1.01);
+  outline: 1.5px solid #c7d2fe;
+  transform: scale(1.01);
 }
 
 .hello {
-    border-bottom: 1px solid white;
-    font-size: 1.2em;
-    display: inline-block;
-    position: relative;
+  border-bottom: 1px solid white;
+  font-size: 1.2em;
+  display: inline-block;
+  position: relative;
 }
 
 .aboutme {
-    display: block;
-    font-size: 1.2rem;
-    line-height: 2rem;
+  display: block;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 
 .shortbio {
-    display: block;
-    font-size: 1em;
-    margin-top: 1em;
-    line-height: 1.5rem;
+  display: block;
+  font-size: 1em;
+  margin-top: 1em;
+  line-height: 1.5rem;
 }
 
 @media (max-width: 850px) {
+  .aboutContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
 
-    .aboutContainer{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0;
-    }
+  .aboutContainer img {
+    width: 50vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
 
-    .aboutContainer img {
-        width: 50vw;
-        height: auto;
-        margin: 0;
-        padding: 0;
-    }
+  .bioContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .bioContainer {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        align-items: center;
-        justify-content: center;
-    }
+  .aboutme {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
 
-    .aboutme {
-        align-items: center;
-        justify-content: center;
-        display: flex;
-    }
-
-    .shortbio {
-        margin: 1.5rem;
-        text-align: center;
-    }
-
+  .shortbio {
+    margin: 1.5rem;
+    text-align: center;
+  }
 }
