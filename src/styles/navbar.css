@@ -111,7 +111,8 @@ a:visited {
   .rightGrid {
     display: none;
     flex-direction: column;
-    background-color: #030713;
+    backdrop-filter: contrast(100%);
+    background-color: rgb(48, 43, 115);
     border-bottom: 0.5px solid white;
     padding: 1rem 1rem 1rem 0;
     position: absolute;
