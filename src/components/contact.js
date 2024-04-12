@@ -1,35 +1,14 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import { MdEmail } from "react-icons/md";
 import { MdLocalPhone } from "react-icons/md";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { IoDocument } from "react-icons/io5";
 import emailjs from "emailjs-com";
 import "../styles/contact.css";
-
-const CustomAlert = ({ message }) => {
-  return (
-    <div className="custom-alert">
-      <div className="custom-alert-content">
-        <p>{message}</p>
-      </div>
-    </div>
-  );
-};
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
-  const [showAlert, setShowAlert] = useState(false);
-  const [alertMessage, setAlertMessage] = useState("");
-
-  const copyToClipboard = (text) => {
-    navigator.clipboard.writeText(text);
-    setAlertMessage(`${text} Copied to Clipboard!`);
-    setShowAlert(true);
-
-    setTimeout(() => {
-      setShowAlert(false);
-    }, 2500);
-  };
-
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -44,9 +23,31 @@ const Contact = () => {
       )
       .then(
         () => {
-          console.log("SUCCESS!");
+          toast("Email Sent!", {
+            position: "bottom-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: false,
+            progress: undefined,
+            theme: "dark",
+            progressClassName: "toastProgress",
+          });
+          console.log("SUCCESS");
         },
         (error) => {
+          toast.error("Failed to Send", {
+            position: "bottom-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: false,
+            progress: undefined,
+            theme: "dark",
+            className: "toastProgress",
+          });
           console.log("FAILED...", error.text);
         }
       );
@@ -59,7 +60,7 @@ const Contact = () => {
         <span className="contactHead">Contact Me</span>
       </h1>
 
-      {showAlert && <CustomAlert message={alertMessage} />}
+      <ToastContainer />
 
       <div className="contactGrid">
         <form className="contact-card" ref={form} onSubmit={sendEmail}>
@@ -70,6 +71,7 @@ const Contact = () => {
               placeholder="Your Name"
               type="text"
               name="name"
+              required
             />
           </span>
 
@@ -80,6 +82,7 @@ const Contact = () => {
               placeholder="Your Email"
               type="email"
               name="email"
+              required
             />
           </span>
 
@@ -89,6 +92,7 @@ const Contact = () => {
               className="message-field"
               placeholder="Your Message"
               name="message"
+              required
             ></textarea>
           </span>
           <input type="submit" className="send" value="Send"></input>
@@ -99,7 +103,19 @@ const Contact = () => {
             <div className="information">
               <div
                 className="contact-type"
-                onClick={() => copyToClipboard("azimrahat108@gmail.com")}
+                onClick={() => {
+                  toast("Email Copied to Clipboard!", {
+                    position: "bottom-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: false,
+                    progress: undefined,
+                    theme: "dark",
+                    progressClassName: "toastProgress",
+                  });
+                }}
                 title="Copy My Email"
               >
                 <MdEmail />
@@ -110,7 +126,19 @@ const Contact = () => {
             <div className="information">
               <div
                 className="contact-type"
-                onClick={() => copyToClipboard("3475707950")}
+                onClick={() => {
+                  toast("Phone Number Copied to Clipboard!", {
+                    position: "bottom-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: false,
+                    progress: undefined,
+                    theme: "dark",
+                    progressClassName: "toastProgress",
+                  });
+                }}
                 title="Copy My Phone Number"
               >
                 <MdLocalPhone />
@@ -141,7 +169,7 @@ const Contact = () => {
 
               <a
                 className="contact-type"
-                href="https://drive.google.com/file/d/1lQSV71MsqMI7n5e8wtP6r3KD3VMR5pp4/view"
+                href="https://drive.google.com/file/d/1oP2GkQ5Bzxb4mmsAnD1dQJBtrf4oBnAL/view"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Resume"

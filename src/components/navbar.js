@@ -63,7 +63,7 @@ function Navbar() {
 
             <a
               class="navButtons"
-              href="https://drive.google.com/file/d/1lQSV71MsqMI7n5e8wtP6r3KD3VMR5pp4/view"
+              href="https://drive.google.com/file/d/1oP2GkQ5Bzxb4mmsAnD1dQJBtrf4oBnAL/view"
               target="_blank"
               rel="noopener noreferrer"
               title="Resume"

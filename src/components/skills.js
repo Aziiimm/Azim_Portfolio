@@ -15,6 +15,7 @@ import {
   jquery,
   nodejs,
   python,
+  ts,
 } from "../assets/technologies";
 
 const Skills = () => {
@@ -43,6 +44,13 @@ const Skills = () => {
           <div>
             <img className="logo" src={javascript} alt="undefined" />
             JavaScript
+          </div>
+        </div>
+
+        <div className="techs">
+          <div>
+            <img className="logo" src={ts} alt="undefined" />
+            TypeScript
           </div>
         </div>
 

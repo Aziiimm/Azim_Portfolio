@@ -11,5 +11,6 @@ import sql from "./mysql.svg";
 import jquery from "./jquery.svg";
 import nodejs from "./nodejs.svg";
 import python from "./python.svg";
+import ts from "./ts.svg";
 
-export { cplusplus, java, javascript, html5, css3, reactjs, tailwindcss, git, mongodb, sql, jquery, nodejs, python }
+export { cplusplus, java, javascript, html5, css3, reactjs, tailwindcss, git, mongodb, sql, jquery, nodejs, python, ts }
