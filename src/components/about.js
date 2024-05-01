@@ -1,5 +1,5 @@
 import React from "react";
-import coverpicture from "../assets/coverpicture.jpeg";
+import coverpicture from "../assets/image1.jpg";
 import "../styles/about.css";
 
 const About = () => {
@@ -33,9 +33,9 @@ const About = () => {
             </span>
 
             <span id="skills" className="shortbio">
-              When I'm not on the computer, I'm usually playing basketball,
-              baking, reading sci-fi books, or playing the newest action RPG
-              games.
+              When I'm not on the computer, I'm usually playing or watching
+              basketball, reading sci-fi books, baking, or playing strategy
+              games!
             </span>
           </div>
         </div>

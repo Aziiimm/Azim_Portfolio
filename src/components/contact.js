@@ -181,7 +181,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="footer">Azim Rahat | 2024</div>
+      <footer className="footer">Azim Rahat | 2024</footer>
     </div>
   );
 };

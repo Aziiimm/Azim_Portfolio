@@ -23,8 +23,8 @@
 .contact-card {
   height: fit-content;
   width: 30em;
-  border: 0.5px solid white;
-  background-color: rgb(30 27 75);
+  border: 0.1px solid white;
+  background-color: rgb(13, 11, 37);
   z-index: 1;
   border-radius: 1em;
   display: flex;
@@ -37,7 +37,7 @@
   width: 5rem;
   color: white;
   font-weight: 700;
-  background-color: rgb(48, 43, 115);
+  background-color: rgb(13, 11, 37);
   border-radius: 1em;
   border: 1px solid white;
   padding: 0.7em;
@@ -61,7 +61,7 @@
 }
 
 .field {
-  background-color: rgb(48, 43, 115);
+  background-color: rgb(34, 30, 88);
   border: 0.5px solid gray;
   border-radius: 0.5em;
   margin-top: 1em;
@@ -79,7 +79,7 @@
 }
 
 .message-field {
-  background-color: rgb(48, 43, 115);
+  background-color: rgb(34, 30, 88);
   border: 0.25px solid gray;
   border-radius: 0.5em;
   margin-top: 1em;
@@ -116,7 +116,7 @@
   align-items: center;
   justify-content: center;
 
-  background-color: rgb(48, 43, 115);
+  background-color: rgb(34, 30, 88);
   border: 0.5px solid white;
   transition: all 0.25s ease-in-out;
   border-radius: 9999px;
@@ -169,11 +169,11 @@
 .Toastify__toast {
   border: 1px solid white !important;
   border-radius: 1.3em !important;
-  background: rgb(48, 43, 115) !important;
+  background: rgb(13, 11, 37) !important;
 }
 
 .toastProgress {
-  background:rgb(199 210 254) !important;
+  background: rgb(199 210 254) !important;
 }
 
 @media (max-width: 850px) {

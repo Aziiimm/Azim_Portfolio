@@ -23,20 +23,21 @@ section {
 }
 
 .coverpicture {
-  width: 20rem;
-  height: 20rem;
+  width: 22.5rem;
+  height: 22.5rem;
   border-radius: 9999px;
-  outline: 1px solid #c7d2fe;
+  outline: 1px solid white;
   font-weight: 700;
   font-size: 1.875rem;
   line-height: 2.25rem;
   margin-top: 10%;
   transition: all 0.25s ease-in-out;
+  object-fit: cover;
 }
 
 .coverpicture:hover {
-  outline: 1.5px solid #c7d2fe;
-  transform: scale(1.01);
+  outline: 1.5px solid white;
+  transform: scale(1.05);
 }
 
 .hello {
@@ -69,7 +70,7 @@ section {
 
   .aboutContainer img {
     width: 50vw;
-    height: auto;
+    height: 50vw;
     margin: 0;
     padding: 0;
   }
