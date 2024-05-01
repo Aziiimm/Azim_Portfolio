@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.fee99589.css",
-    "main.js": "/static/js/main.4db68a02.js",
+    "main.css": "/static/css/main.92a3f671.css",
+    "main.js": "/static/js/main.9f5333ab.js",
     "static/js/453.b506345a.chunk.js": "/static/js/453.b506345a.chunk.js",
     "static/media/textgame.gif": "/static/media/textgame.41ac2203fe6b9429970a.gif",
-    "static/media/coverpicture.jpeg": "/static/media/coverpicture.d173fc4c459ee319383c.jpeg",
     "static/media/calculatorproject.gif": "/static/media/calculatorproject.6fc933f7f30bdff463b6.gif",
+    "static/media/image1.jpg": "/static/media/image1.c7fa3e5ad1a05fd369eb.jpg",
     "static/media/mongodb.svg": "/static/media/mongodb.6835c61a518a732eb8318d43dfe8f700.svg",
     "static/media/nodejs.svg": "/static/media/nodejs.083a75a309de2a865a9fa4ca1cb6599a.svg",
     "static/media/mysql.svg": "/static/media/mysql.a83af77e8ec69d861f319fa6d1c48fa4.svg",
@@ -21,12 +21,12 @@
     "static/media/tailwindcss.svg": "/static/media/tailwindcss.9e34cea7e64dc92eb2cddb65092b0336.svg",
     "static/media/html.svg": "/static/media/html.8664168d5bc90b1a24396f85aadbf623.svg",
     "index.html": "/index.html",
-    "main.fee99589.css.map": "/static/css/main.fee99589.css.map",
-    "main.4db68a02.js.map": "/static/js/main.4db68a02.js.map",
+    "main.92a3f671.css.map": "/static/css/main.92a3f671.css.map",
+    "main.9f5333ab.js.map": "/static/js/main.9f5333ab.js.map",
     "453.b506345a.chunk.js.map": "/static/js/453.b506345a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fee99589.css",
-    "static/js/main.4db68a02.js"
+    "static/css/main.92a3f671.css",
+    "static/js/main.9f5333ab.js"
   ]
 }
