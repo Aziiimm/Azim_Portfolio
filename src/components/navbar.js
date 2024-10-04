@@ -79,7 +79,7 @@ function Navbar() {
 
           <div className="socials">
             <a
-              class="navButtons"
+              className="navButtons"
               href="https://github.com/Aziiimm"
               target="_blank"
               rel="noopener noreferrer"
@@ -88,7 +88,7 @@ function Navbar() {
               <AiFillGithub />
             </a>
             <a
-              class="navButtons"
+              className="navButtons"
               href="https://www.linkedin.com/in/azim-rahat/"
               target="_blank"
               rel="noopener noreferrer"
@@ -98,7 +98,7 @@ function Navbar() {
             </a>
 
             <a
-              class="navButtons"
+              className="navButtons"
               href="https://drive.google.com/file/d/1oP2GkQ5Bzxb4mmsAnD1dQJBtrf4oBnAL/view"
               target="_blank"
               rel="noopener noreferrer"

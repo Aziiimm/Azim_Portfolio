@@ -9,10 +9,10 @@ import Contact from "./components/contact";
 
 function App() {
   return (
-    <div class="secondBackground">
-      <StarrySky />
+    <div className="secondBackground">
+      {/* <StarrySky /> */}
 
-      <div class="navBehavior">
+      <div className="navBehavior">
         <Navbar />
       </div>
 

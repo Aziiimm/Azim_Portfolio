@@ -1,58 +1,19 @@
-.projectsContainer {
-  font-family: sans-serif;
-  color: white;
-  height: fit-content;
-}
-
-.projectsHead {
-  border-bottom: 1px solid white;
-  display: inline-block;
-  font-size: 1.3rem;
-}
-
 .projectsList {
-  display: grid;
-  grid-template-rows: repeat(1, minmax(0, 1fr));
-  justify-content: center;
-  margin: 0 auto 0 auto;
-  height: fit-content;
-  gap: 1rem;
-}
-
-.project-stack {
   display: flex;
-  gap: 0.5em;
-  z-index: 40;
-  flex-wrap: wrap;
-}
-
-.project-stack div {
-  font-size: x-small;
-  min-width: 2.5rem;
-  text-align: center;
-  border-radius: 9999px;
-  padding: 0.5rem 0.4rem 0.5rem 0.4rem;
-  background-color: #c7d2fe;
-  font-weight: 700;
-  background-color: rgb(30 27 75);
+  flex-direction: column;
+  gap: 1em;
+  padding: 0;
+  margin: 0;
 }
 
 .project-card {
-  margin: 0 8em 2em 8em;
-  position: relative;
-  object-fit: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  overflow: hidden;
+  width: 50vw;
   display: flex;
   align-items: flex-end;
-  border-radius: 1rem;
-  break-inside: avoid;
-  max-width: 50rem;
-  background-image: linear-gradient(to bottom, transparent 50%, black 100%);
-  background-blend-mode: overlay;
-  background-size: cover;
+  border-radius: 1em;
+  overflow: hidden;
   transition: all 0.5s ease-in-out;
+  will-change: transform;
 }
 
 .project-card:hover::before {
@@ -60,37 +21,32 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to bottom, transparent 40%, #0e1111 100%);
+  background-image: linear-gradient(to bottom, transparent 20%, #0e1111 100%);
   z-index: 1;
-  border-radius: 1rem;
 }
 
 .project-card img {
-  object-fit: cover;
-  vertical-align: middle;
-  width: 100% !important;
-  height: 100% !important;
+  width: 100%;
 }
 
 .project-card:hover {
-  transform: scale(1.025);
-  content-visibility: visible;
+  transform: translateY(-10px);
 }
+
 .project-card:hover .content-slate {
   visibility: visible;
   opacity: 1;
 }
 
 .content-slate {
-  z-index: 1;
   position: absolute;
   display: flex;
   flex-direction: column;
-  margin: 0 0 1rem 3rem;
+  margin: 1em;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  flex-wrap: nowrap;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
 }
 
 .content-slate a {
@@ -101,35 +57,60 @@
 }
 
 .content-slate p {
-  font-size: small;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+.project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  z-index: 1;
+}
+
+.project-stack div {
+  font-size: 12px;
+  text-align: center;
+  border-radius: 1em;
+  padding: 0.5rem;
+  background-color: rgb(30 27 75);
+}
+
+@media (max-width: 1000px) {
+  .content-slate p {
+    font-size: x-small;
+  }
+}
+
+@media (max-width: 850px) {
+  .project-card {
+    min-width: 25em;
+  }
+  .content-slate a {
+    font-size: large;
+  }
+  .project-stack div {
+    font-size: xx-small;
+  }
 }
 
 @media (max-width: 650px) {
-  .project-card {
-    margin: 0 1rem 0 1rem;
-  }
-
-  .content-slate {
-    margin: 0 0 1rem 1rem;
-  }
-
   .content-slate a {
-    font-size: small;
-    margin: 0 0 0.5em 0;
-  }
-  .content-slate p {
-    font-size: x-small;
-    width: auto;
-    margin: 0 0 0.5em 0;
+    font-size: medium;
   }
 
   .project-stack {
     gap: 5px 5px;
-    margin: 0;
   }
 
   .project-stack div {
     font-size: 8px;
     padding: 0.3rem 0.2rem 0.3rem 0.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .project-card {
+    min-width: 20em;
   }
 }
