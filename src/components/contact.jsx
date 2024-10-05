@@ -1,11 +1,10 @@
 import React, { useRef } from "react";
 import { MdEmail, MdLocalPhone } from "react-icons/md";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import { IoDocument } from "react-icons/io5";
-import emailjs from "emailjs-com";
-import "../styles/contact.css";
 import { ToastContainer, toast } from "react-toastify";
+import emailjs from "emailjs-com";
+import Socials from "./socials";
 import "react-toastify/dist/ReactToastify.css";
+import "../styles/contact.css";
 
 const emailjsUserId = process.env.REACT_APP_EMAILJS_USER_ID;
 
@@ -55,7 +54,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="container">
+    <section className="container" id="contact">
       <header>
         <h1 className="title">Contact Me</h1>
       </header>
@@ -133,37 +132,10 @@ const Contact = () => {
               347-570-7950
             </button>
 
-            <div className="information-socials">
-              <a
-                className="footer-socials"
-                href="https://github.com/Aziiimm"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="GitHub"
-              >
-                <AiFillGithub aria-label="GitHub" />
-              </a>
-
-              <a
-                className="footer-socials"
-                href="https://www.linkedin.com/in/azim-rahat/"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="LinkedIn"
-              >
-                <AiFillLinkedin aria-label="LinkedIn" />
-              </a>
-
-              <a
-                className="footer-socials"
-                href="https://drive.google.com/file/d/1oP2GkQ5Bzxb4mmsAnD1dQJBtrf4oBnAL/view"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Resume"
-              >
-                <IoDocument aria-label="Resume" />
-              </a>
-            </div>
+            <Socials
+              containerClass="information-socials"
+              linkClass="footer-socials"
+            />
           </section>
         </div>
       </div>

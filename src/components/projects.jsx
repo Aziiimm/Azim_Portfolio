@@ -1,7 +1,7 @@
-import "../styles/projects.css";
+import React from "react";
 import calculatorproject from "../assets/calculatorproject.gif";
 import textgame from "../assets/textgame.gif";
-import React from "react";
+import "../styles/projects.css";
 
 const projectData = [
   {
@@ -25,7 +25,7 @@ const projectData = [
 
 const Projects = () => {
   return (
-    <section className="container">
+    <section className="container" id="projects">
       <header>
         <h1 className="title">Projects</h1>
       </header>

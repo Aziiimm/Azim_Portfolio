@@ -1,36 +1,21 @@
-import "./styles/App.css";
-import Navbar from "./components/navbar";
-import StarrySky from "./components/starrynight";
-import About from "./components/about";
 import React from "react";
+import Navbar from "./components/navbar";
+import About from "./components/about";
 import Skills from "./components/skills";
 import Projects from "./components/projects";
 import Contact from "./components/contact";
+import "./styles/App.css";
 
 function App() {
   return (
-    <div className="secondBackground">
-      {/* <StarrySky /> */}
-
+    <div>
       <div className="navBehavior">
         <Navbar />
       </div>
-
-      <div className="aboutBehavior">
-        <About />
-      </div>
-
-      <div className="skillsBehavior">
-        <Skills />
-      </div>
-
-      <div className="projectBehavior">
-        <Projects />
-      </div>
-
-      <div className="contactBehavior">
-        <Contact />
-      </div>
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
     </div>
   );
 }

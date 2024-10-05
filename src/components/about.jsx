@@ -1,5 +1,5 @@
 import React from "react";
-import coverpicture from "../assets/image1.jpg";
+import heroimage from "../assets/heroimage.jpg";
 import "../styles/about.css";
 
 const About = () => {
@@ -7,36 +7,32 @@ const About = () => {
     <section id="about" className="hero">
       <div className="aboutContainer">
         <div>
-          <img
-            className="coverpicture"
-            src={coverpicture}
-            alt="Azim Rahat"
-          ></img>
+          <img className="coverpicture" src={heroimage} alt="Me"></img>
         </div>
 
         <div className="bioContainer">
-          <h1>
+          <h2>
             <span className="hello">Hello Everyone,</span>
-          </h1>
+          </h2>
 
           <div>
-            <span className="aboutme">
+            <p className="aboutme">
               My name is&nbsp;<strong>Azim</strong>, and I'm an
-            </span>
-            <span className="aboutme">Aspiring Software Engineer</span>
+            </p>
+            <p className="aboutme">Aspiring Software Engineer</p>
 
-            <span className="shortbio">
+            <p className="shortbio">
               I'm currently a student at CUNY City College, and I have a deep
               passion for problem solving, programming, and creating. I am a
               quick learner, and I enjoy exploring new technologies and
               expanding my skillset!
-            </span>
+            </p>
 
-            <span id="skills" className="shortbio">
+            <p id="skills" className="shortbio">
               When I'm not on the computer, I'm usually playing or watching
-              basketball, reading sci-fi books, baking, or playing strategy
-              games!
-            </span>
+              basketball, reading sci-fi, puzzling, or playing party games with
+              friends!
+            </p>
           </div>
         </div>
       </div>

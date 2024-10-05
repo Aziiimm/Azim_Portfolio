@@ -15,11 +15,12 @@ section {
   gap: 10rem;
   margin-top: 6rem;
   z-index: 1;
+  align-items: center;
 }
 
 .bioContainer {
   margin-top: 0;
-  max-width: 25em;
+  max-width: 20em;
 }
 
 .coverpicture {
@@ -30,7 +31,6 @@ section {
   font-weight: 700;
   font-size: 1.875rem;
   line-height: 2.25rem;
-  margin-top: 10%;
   transition: all 0.25s ease-in-out;
   object-fit: cover;
 }
@@ -51,6 +51,7 @@ section {
   display: block;
   font-size: 1.2rem;
   line-height: 2rem;
+  margin: 0;
 }
 
 .shortbio {

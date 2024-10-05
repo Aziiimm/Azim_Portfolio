@@ -1,10 +1,4 @@
-a:link,
-a:visited {
-  text-decoration: none;
-  color: white;
-}
-
-.bar {
+.nav {
   color: white;
   padding-bottom: 0.75rem;
   border-bottom: 0.5px solid white;
@@ -15,63 +9,52 @@ a:visited {
   margin: 0;
 }
 
-.barItems {
+.nav__items {
   display: flex;
   justify-content: space-between;
   padding-top: 1.5rem;
-  flex-wrap: nowrap;
 }
 
-.main {
+.nav__logo {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
-  margin-left: 11rem;
-  flex-wrap: nowrap;
+  margin-left: 4rem;
   white-space: nowrap;
 }
 
-.rightGrid {
+.nav__menu {
   display: flex;
   gap: 0.5rem;
-  flex-wrap: nowrap;
 }
 
-.sections {
+.nav__sections {
   display: flex;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 700;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
   gap: 2.5rem;
 }
 
-.navButtons {
+.nav__icons {
   transition: all 0.25s ease-in-out;
 }
-.navButtons:hover {
-  color: rgb(199 210 254);
+.nav__icons:hover {
   transform: scale(1.1);
 }
 
-.socials {
+.nav__socials {
   display: flex;
   font-size: 1.5rem;
   line-height: 1.5rem;
   font-weight: 700;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 2.5rem;
   gap: 1.25rem;
   border-left: 1px solid white;
-  flex-wrap: nowrap;
 }
 
-.burger-menu {
+.nav__burger-menu {
   display: none;
   outline: none;
   border: none;
@@ -80,10 +63,6 @@ a:visited {
 }
 
 @media (max-width: 850px) {
-  .hide {
-    display: none;
-  }
-
   .main {
     margin-left: 1rem;
     margin-right: auto;
@@ -92,23 +71,19 @@ a:visited {
     bottom: 20px;
   }
 
-  .burger-menu {
-    position: relative;
-    bottom: 5px;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    font-weight: 700;
-    color: white;
+  .nav__burger-menu {
     display: flex;
+    position: relative;
+    padding: 0;
+    bottom: 5px;
     align-items: center;
     height: 2.5rem;
     width: 2.5rem;
     min-width: 2.5rem;
     min-height: 2.5rem;
-    justify-content: center;
   }
 
-  .rightGrid {
+  .nav__menu {
     display: none;
     flex-direction: column;
     border-bottom: 1px solid white;
@@ -120,7 +95,7 @@ a:visited {
     z-index: 100;
   }
 
-  .socials {
+  .nav__socials {
     border: 0;
     margin: 0;
     padding: 0;
@@ -129,13 +104,13 @@ a:visited {
     width: 100vw;
   }
 
-  .sections {
+  .nav__sections {
     padding: 1rem 0 1rem 0;
     justify-content: center;
     width: 100vw;
   }
 
-  .rightGrid.open {
+  .nav__menu.open {
     background-color: rgba(0, 0, 0, 0.6);
     display: flex;
   }

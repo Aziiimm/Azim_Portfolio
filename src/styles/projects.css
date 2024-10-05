@@ -71,9 +71,10 @@
 .project-stack div {
   font-size: 12px;
   text-align: center;
-  border-radius: 1em;
+  border-radius: 0.8em;
   padding: 0.5rem;
-  background-color: rgb(30 27 75);
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid white;
 }
 
 @media (max-width: 1000px) {
