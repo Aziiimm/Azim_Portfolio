@@ -145,11 +145,11 @@
 .Toastify__toast {
   border: 1px solid white !important;
   border-radius: 1.3em !important;
-  background: rgb(13, 11, 37) !important;
+  background: #11263f !important;
 }
 
 .toastProgress {
-  background: rgb(199 210 254) !important;
+  background: #224870 !important;
 }
 
 @media (max-width: 850px) {
