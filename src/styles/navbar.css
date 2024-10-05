@@ -42,6 +42,7 @@
 }
 .nav__icons:hover {
   transform: scale(1.1);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .nav__socials {
@@ -60,6 +61,15 @@
   border: none;
   cursor: pointer;
   background-color: transparent;
+}
+
+@media (max-width: 1000px) {
+  .nav__sections {
+    gap: 15px;
+  }
+  .nav__socials {
+    padding: 0.5rem 1.5rem;
+  }
 }
 
 @media (max-width: 850px) {
@@ -111,7 +121,7 @@
   }
 
   .nav__menu.open {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
   }
 }

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import BurgerMenuIcon from "./burgermenuicon";
 import Socials from "./socials";
 import "../styles/navbar.css";
@@ -30,6 +30,9 @@ function Navbar() {
             <div className="nav__sections">
               <a className="nav__icons" href="#about">
                 About
+              </a>
+              <a className="nav__icons" href="#experience">
+                Experience
               </a>
               <a className="nav__icons" href="#skills">
                 Skills

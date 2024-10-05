@@ -28,7 +28,7 @@ const About = () => {
               expanding my skillset!
             </p>
 
-            <p id="skills" className="shortbio">
+            <p className="shortbio">
               When I'm not on the computer, I'm usually playing or watching
               basketball, reading sci-fi, puzzling, or playing party games with
               friends!

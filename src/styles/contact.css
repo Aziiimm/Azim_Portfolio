@@ -2,8 +2,7 @@
   display: flex;
   align-items: flex-end;
   gap: 5em;
-  width: 50vw;
-  margin-bottom: 10em;
+  width: 45vw;
   justify-content: space-around;
 }
 
@@ -25,9 +24,13 @@
 }
 
 .prompt textarea {
-  padding: 10px 0 10px 0;
+  padding: 10px 0 10px 10px;
   min-height: 6em;
-  max-height: 20em;
+  max-height: 30em;
+}
+
+.prompt input {
+  padding-left: 10px;
 }
 
 .field {
@@ -40,14 +43,13 @@
   color: white;
   font-size: 15px;
   text-align: left;
-  text-indent: 10px;
   transition: all 0.15s ease-in-out;
   resize: vertical;
 }
 
 .field:hover {
   border: 0.5px solid white;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .send {
@@ -85,7 +87,8 @@
 
   padding: 1em;
   gap: 1em;
-  font-size: medium;
+  font-size: 15px;
+  font-weight: 500;
   align-items: center;
   transition: all 0.25s ease-in-out;
   z-index: 1;
@@ -95,7 +98,7 @@
 .contact-type:hover {
   transform: scale(1.025);
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .icon {
@@ -121,16 +124,18 @@
 
 .footer-socials:hover {
   transform: scale(1.1);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer {
+  margin-top: 12em;
   border-top: 1px solid white;
   padding: 2rem 0 2rem 0;
   left: 0;
 
   width: 100%;
   color: white;
-  font-size: 12px;
+  font-size: 14px;
   font-family: sans-serif;
   text-align: left;
   text-indent: 10rem;
@@ -154,6 +159,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 50vw;
   }
 
   .contact-card {

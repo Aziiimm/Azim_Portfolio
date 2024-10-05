@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "../styles/skills.css";
 import {
   cplusplus,
   java,
@@ -22,6 +21,7 @@ import {
   nextjs,
   postgres,
 } from "../assets/technologies";
+import "../styles/skills.css";
 
 const Skills = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -33,14 +33,14 @@ const Skills = () => {
     { name: "HTML5", img: html5, category: ["frontend"] },
     { name: "CSS3", img: css3, category: ["frontend"] },
     { name: "Tailwind", img: tailwindcss, category: ["frontend"] },
-    { name: "jQuery", img: jquery, category: ["frontend"] },
     { name: "Next.js", img: nextjs, category: ["frontend", "backend"] },
+    { name: "jQuery", img: jquery, category: ["frontend"] },
+    { name: "Node.js", img: nodejs, category: ["backend"] },
+    { name: "Express.js", img: expressjs, category: ["backend"] },
+    { name: "Python", img: python, category: ["backend"] },
+    { name: "Flask", img: flask, category: ["backend"] },
     { name: "C++", img: cplusplus, category: ["backend"] },
     { name: "Java", img: java, category: ["backend"] },
-    { name: "Python", img: python, category: ["backend"] },
-    { name: "Node.js", img: nodejs, category: ["backend"] },
-    { name: "Flask", img: flask, category: ["backend"] },
-    { name: "Express.js", img: expressjs, category: ["backend"] },
     { name: "MySQL", img: sql, category: ["database"] },
     { name: "MongoDB", img: mongodb, category: ["database"] },
     { name: "Postgres", img: postgres, category: ["database"] },
@@ -57,7 +57,7 @@ const Skills = () => {
       : techs.filter((tech) => tech.category.includes(selectedCategory));
 
   return (
-    <section className="container">
+    <section className="container" id="skills">
       <header>
         <h1 className="title">Tech Stack</h1>
       </header>

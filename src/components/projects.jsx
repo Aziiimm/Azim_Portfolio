@@ -1,6 +1,6 @@
 import React from "react";
-import calculatorproject from "../assets/calculatorproject.gif";
-import textgame from "../assets/textgame.gif";
+import calculatorproject from "../assets/projects/calculatorproject.gif";
+import textgame from "../assets/projects/textgame.gif";
 import "../styles/projects.css";
 
 const projectData = [

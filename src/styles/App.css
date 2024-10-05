@@ -1,5 +1,10 @@
 * {
-  font-family: sans-serif;
+  font-family: montserrat;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf") format(truetype);
 }
 
 body {
@@ -8,10 +13,10 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
-  background: linear-gradient(-45deg, #122c34, #122c34, #224870, #122c34);
+  background: linear-gradient(-45deg, #0a161a, #11263f, #122c34, #224870);
   background-size: 400% 400%;
   padding: 0;
-  animation: gradient 15s ease-in-out infinite;
+  animation: gradient 5s ease-in-out infinite;
 }
 
 @keyframes gradient {
@@ -36,7 +41,7 @@ a:visited {
   display: flex;
   justify-content: center;
   margin-top: 2.5em;
-  font-size: x-large;
+  font-size: 30px;
   border-bottom: 1px solid white;
 }
 
