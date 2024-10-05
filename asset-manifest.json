@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Azim_Portfolio/static/css/main.b8f43d9a.css",
+    "main.css": "/Azim_Portfolio/static/css/main.7dd5eb3f.css",
     "main.js": "/Azim_Portfolio/static/js/main.2af2d163.js",
     "static/js/453.b506345a.chunk.js": "/Azim_Portfolio/static/js/453.b506345a.chunk.js",
     "static/media/textgame.gif": "/Azim_Portfolio/static/media/textgame.41ac2203fe6b9429970a.gif",
@@ -28,12 +28,12 @@
     "static/media/tailwindcss.svg": "/Azim_Portfolio/static/media/tailwindcss.9e34cea7e64dc92eb2cddb65092b0336.svg",
     "static/media/html.svg": "/Azim_Portfolio/static/media/html.8664168d5bc90b1a24396f85aadbf623.svg",
     "index.html": "/Azim_Portfolio/index.html",
-    "main.b8f43d9a.css.map": "/Azim_Portfolio/static/css/main.b8f43d9a.css.map",
+    "main.7dd5eb3f.css.map": "/Azim_Portfolio/static/css/main.7dd5eb3f.css.map",
     "main.2af2d163.js.map": "/Azim_Portfolio/static/js/main.2af2d163.js.map",
     "453.b506345a.chunk.js.map": "/Azim_Portfolio/static/js/453.b506345a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8f43d9a.css",
+    "static/css/main.7dd5eb3f.css",
     "static/js/main.2af2d163.js"
   ]
 }
