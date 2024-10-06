@@ -18,6 +18,7 @@
   cursor: pointer;
   z-index: 1;
   transition: all 0.3s ease-in-out;
+  text-align: center;
 }
 
 .filter-btn.active {
@@ -159,7 +160,8 @@
     gap: 0;
   }
   .filter-btn {
-    width: 6em;
+    width: 65px;
     height: 2.2em;
+    font-size: 10.5px;
   }
 }
