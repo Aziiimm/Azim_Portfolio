@@ -151,12 +151,12 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .skills {
     width: 70vw;
   }
   .filters {
-    gap: 3px;
+    gap: 0;
   }
   .filter-btn {
     width: 70px;
