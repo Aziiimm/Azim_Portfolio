@@ -91,6 +91,7 @@
     width: 2.5rem;
     min-width: 2.5rem;
     min-height: 2.5rem;
+    margin-right: 64px;
   }
 
   .nav__menu {
