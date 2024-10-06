@@ -152,14 +152,14 @@
 }
 
 @media (max-width: 375px) {
+  .skills {
+    width: 70vw;
+  }
   .filters {
     gap: 3px;
   }
   .filter-btn {
     width: 70px;
     height: 30px;
-  }
-  .skills {
-    width: 70vw;
   }
 }
