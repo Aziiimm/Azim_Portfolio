@@ -158,10 +158,12 @@
   }
   .filters {
     gap: 0;
+    width: 100vw;
   }
   .filter-btn {
-    width: 65px;
+    width: 7em;
     height: 2.2em;
     font-size: 10.5px;
+    text-align: center;
   }
 }
