@@ -73,9 +73,8 @@
 }
 
 @media (max-width: 850px) {
-  .main {
-    margin-left: 1rem;
-    margin-right: auto;
+  .nav__logo {
+    margin-left: 32px;
     align-items: center;
     position: absolute;
     bottom: 20px;
@@ -91,7 +90,7 @@
     width: 2.5rem;
     min-width: 2.5rem;
     min-height: 2.5rem;
-    margin-right: 64px;
+    margin-right: 16px;
   }
 
   .nav__menu {

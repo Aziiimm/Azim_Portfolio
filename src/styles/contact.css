@@ -152,18 +152,23 @@
   background: #224870 !important;
 }
 
+@media (max-width: 1300px) {
+  .contactGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media (max-width: 850px) {
   .contactGrid {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 50vw;
   }
 
   .contact-card {
-    width: 90%;
+    width: 80vw;
     height: auto;
   }
 
@@ -173,5 +178,8 @@
     justify-content: center;
     margin: 0 auto 3em auto;
     padding: 0;
+  }
+  .footer {
+    text-indent: 32px;
   }
 }

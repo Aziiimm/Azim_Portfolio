@@ -135,12 +135,12 @@
   .skills {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  .filters {
-    display: none;
-  }
 }
 
 @media (max-width: 450px) {
+  .filters {
+    gap: 5px;
+  }
   .techs {
     width: 4.5rem;
     height: 4.5rem;
@@ -152,6 +152,13 @@
 }
 
 @media (max-width: 375px) {
+  .filters {
+    gap: 3px;
+  }
+  .filter-btn {
+    width: 66px;
+    height: 33px;
+  }
   .skills {
     width: 70vw;
   }
