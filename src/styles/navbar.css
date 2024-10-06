@@ -125,3 +125,13 @@
     display: flex;
   }
 }
+
+@media (max-width: 450px) {
+  .nav__sections {
+    gap: 10px;
+  }
+
+  .nav__sections a {
+    font-size: 14px;
+  }
+}
