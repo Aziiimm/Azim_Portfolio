@@ -27,9 +27,7 @@
   gap: 5em;
   margin: 50px 0 50px 0;
   padding: 50px 0 50px 0;
-  border-radius: 9999px;
   align-items: center;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   transition: all 0.25s ease-in-out;
   min-width: fit-content;
 }

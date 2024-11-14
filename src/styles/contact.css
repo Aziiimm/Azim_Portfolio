@@ -40,7 +40,6 @@
   border-radius: 0.5em;
   margin-top: 1em;
   min-height: 2em;
-  color: white;
   font-size: 15px;
   text-align: left;
   transition: all 0.15s ease-in-out;
@@ -48,14 +47,12 @@
 }
 
 .field:hover {
-  border: 0.5px solid white;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
 .send {
   margin: 1em auto;
   width: 5rem;
-  color: white;
   font-weight: 700;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 1em;
@@ -71,7 +68,6 @@
 }
 
 .information-container {
-  color: white;
   display: flex;
   flex-direction: column;
   gap: 1.5em;
@@ -92,7 +88,6 @@
   align-items: center;
   transition: all 0.25s ease-in-out;
   z-index: 1;
-  color: white;
 }
 
 .contact-type:hover {
@@ -134,7 +129,6 @@
   left: 0;
 
   width: 100%;
-  color: white;
   font-size: 14px;
   font-family: sans-serif;
   text-align: left;
@@ -145,11 +139,11 @@
 .Toastify__toast {
   border: 1px solid white !important;
   border-radius: 1.3em !important;
-  background: #11263f !important;
+  background: rgb(15, 21, 26) !important;
 }
 
 .toastProgress {
-  background: #224870 !important;
+  background: rgb(124, 134, 143) !important;
 }
 
 @media (max-width: 1300px) {

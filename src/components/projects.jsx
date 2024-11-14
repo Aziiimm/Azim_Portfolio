@@ -1,16 +1,46 @@
 import React from "react";
-import calculatorproject from "../assets/projects/calculatorproject.gif";
 import textgame from "../assets/projects/textgame.gif";
+import binyc from "../assets/projects/binyc.gif";
+import shotcaller from "../assets/projects/shotcaller.gif";
+import encrypter from "../assets/projects/encrypter.gif";
 import "../styles/projects.css";
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 const projectData = [
   {
-    img: calculatorproject,
-    alt: "Calcify calculator project",
-    title: "Calcify",
-    description: "A calculator capable of solving basic calculus functions!",
-    techStack: ["JavaScript", "React", "Tailwind"],
-    link: "https://github.com/Aziiimm/Calcify",
+    img: shotcaller,
+    alt: "ShotCaller project",
+    title: "ShotCaller",
+    description: "Predict NBA and Fantasy League Match outcomes!",
+    techStack: [
+      "Python",
+      "Beautiful Soup",
+      "Pandas",
+      "PostgreSQL",
+      "Scikit-learn",
+      "Flask",
+      "Vite",
+      "Typescript",
+    ],
+    link: "https://shot-caller-five.vercel.app/",
+  },
+  {
+    img: binyc,
+    alt: "BINyc project",
+    title: "BINyc",
+    description:
+      "See or report any trash sightings in NYC. Keep the streets clean!",
+    techStack: ["Vite", "React", "Express", "Tailwind", "Leaflet", "MongoDB"],
+    link: "https://github.com/Aziiimm/BINyc",
+  },
+  {
+    img: encrypter,
+    alt: "Customer Encrypter/Decrypter project",
+    title: "Custom Encrypter/Decrypter",
+    description:
+      "A custom encryption/decryption tool applying an original cipher method! ",
+    techStack: ["Java"],
+    link: "https://github.com/Aziiimm/custom-encrypter-decrypter",
   },
   {
     img: textgame,
@@ -44,7 +74,7 @@ const Projects = () => {
                 rel="noopener noreferrer"
                 aria-label={`View ${project.title} project on GitHub`}
               >
-                {project.title}
+                {project.title} <MdOutlineArrowOutward />
               </a>
               <p>{project.description}</p>
 

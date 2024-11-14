@@ -1,5 +1,6 @@
 * {
   font-family: montserrat;
+  color: white;
 }
 
 @font-face {
@@ -13,7 +14,8 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
-  background: linear-gradient(-45deg, #0a161a, #11263f, #122c34, #224870);
+  /* background: linear-gradient(-45deg, #0a161a, #11263f, #122c34, #224870); */
+  background: radial-gradient(rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
   background-size: 400% 400%;
   padding: 0;
   animation: gradient 5s ease-in-out infinite;
@@ -34,7 +36,6 @@ body {
 a:link,
 a:visited {
   text-decoration: none;
-  color: white;
 }
 
 .title {
@@ -47,7 +48,6 @@ a:visited {
 
 .container {
   font-family: sans-serif;
-  color: white;
 
   display: flex;
   flex-direction: column;
