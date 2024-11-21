@@ -59,7 +59,7 @@ const Skills = () => {
   return (
     <section className="container" id="skills">
       <header>
-        <h1 className="title">Tech Stack</h1>
+        <h1 className="title">Technical Skills</h1>
       </header>
 
       <div className="filters">

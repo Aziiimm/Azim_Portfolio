@@ -29,9 +29,9 @@ const About = () => {
             </p>
 
             <p className="shortbio">
-              When I'm not on the computer, I'm usually playing or watching
-              basketball, reading sci-fi, puzzling, or playing party games with
-              friends!
+              Outside of tech, I'm a huge sports enthusaist, I love playing or
+              watching basketball. I also enjoy reading or playing sci-fi games,
+              puzzling, or spending time with friends!
             </p>
           </div>
         </div>

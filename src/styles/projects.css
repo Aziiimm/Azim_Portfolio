@@ -54,6 +54,10 @@
   font-weight: 700;
   border-bottom: 1px solid white;
   width: fit-content;
+  transition: all 0.1s ease-in-out;
+}
+.content-slate a:hover {
+  transform: translateY(-5px);
 }
 
 .content-slate p {

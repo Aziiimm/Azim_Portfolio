@@ -29,7 +29,7 @@ const projectData = [
     alt: "BINyc project",
     title: "BINyc",
     description:
-      "See or report any trash sightings in NYC. Keep the streets clean!",
+      "See or report any trash sightings in NYC to keep the city clean!",
     techStack: ["Vite", "React", "Express", "Tailwind", "Leaflet", "MongoDB"],
     link: "https://github.com/Aziiimm/BINyc",
   },
