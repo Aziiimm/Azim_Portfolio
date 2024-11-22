@@ -21,6 +21,7 @@ const projectData = [
       "Flask",
       "Vite",
       "Typescript",
+      "Heroku",
     ],
     link: "https://shot-caller-five.vercel.app/",
   },
