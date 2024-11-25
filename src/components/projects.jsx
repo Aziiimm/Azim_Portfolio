@@ -76,7 +76,10 @@ const Projects = () => {
                 rel="noopener noreferrer"
                 aria-label={`View ${project.title} project on GitHub`}
               >
-                {project.title} <MdOutlineArrowOutward />
+                {project.title}
+                <span className="arrow">
+                  <MdOutlineArrowOutward />
+                </span>
               </a>
               <p>{project.description}</p>
 

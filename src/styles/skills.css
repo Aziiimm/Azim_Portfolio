@@ -11,7 +11,7 @@
   height: 50px;
   background-color: transparent;
   font-size: medium;
-  font-weight: 400;
+  font-weight: 500;
   border: 0;
   border-radius: 0.5em;
   cursor: pointer;
@@ -22,7 +22,7 @@
 
 .filter-btn.active {
   transform: translateY(-10px);
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .filter-btn:hover {
@@ -51,11 +51,11 @@
   z-index: 1;
 
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 500;
   transition: all 0.25s ease-in-out;
   gap: 0.5rem;
 
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.05);
   border-radius: 0.5em;
 }
 

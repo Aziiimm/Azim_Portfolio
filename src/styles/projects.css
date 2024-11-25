@@ -54,6 +54,7 @@
   font-weight: 700;
   border-bottom: 1px solid white;
   width: fit-content;
+  color: white;
   transition: all 0.1s ease-in-out;
 }
 .content-slate a:hover {
@@ -62,6 +63,7 @@
 
 .content-slate p {
   font-size: 14px;
+  color: white;
   line-height: 1.5em;
 }
 
@@ -72,6 +74,10 @@
   z-index: 1;
 }
 
+.arrow svg {
+  fill: white !important;
+}
+
 .project-stack div {
   font-size: 12px;
   text-align: center;
@@ -79,6 +85,7 @@
   padding: 0.2rem 0.4rem;
   background-color: #11263f;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
 }
 
 @media (max-width: 1000px) {

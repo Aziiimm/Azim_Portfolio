@@ -10,8 +10,8 @@
   display: flex;
   flex-direction: column;
   width: 30em;
-  border: 0.1px solid white;
-  background-color: rgba(0, 0, 0, 0.2);
+  border: 0.1px solid gray;
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 1em;
   z-index: 1;
 }
@@ -21,6 +21,7 @@
   flex-direction: column;
   text-align: left;
   margin: 1em;
+  font-weight: 500;
 }
 
 .prompt textarea {
@@ -47,7 +48,7 @@
 }
 
 .field:hover {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .send {
@@ -56,7 +57,7 @@
   font-weight: 700;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 1em;
-  border: 1px solid white;
+  border: 1px solid gray;
   padding: 0.7em;
   text-align: center;
   transition: all 0.25s ease-in-out;
@@ -64,7 +65,7 @@
 
 .send:hover {
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .information-container {
@@ -78,7 +79,7 @@
   display: flex;
   flex-direction: column;
 
-  border: 0.5px solid white;
+  border: 0.5px solid gray;
   border-radius: 1em;
 
   padding: 1em;
@@ -93,7 +94,7 @@
 .contact-type:hover {
   transform: scale(1.025);
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .icon {
@@ -104,8 +105,6 @@
   display: flex;
   justify-content: center;
   gap: 2em;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
   padding: 1em 0 1em 0;
   width: 100%;
 }
@@ -119,17 +118,17 @@
 
 .footer-socials:hover {
   transform: scale(1.1);
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer {
   margin-top: 12em;
-  border-top: 1px solid white;
+  border-top: 1px solid black;
   padding: 2rem 0 2rem 0;
   left: 0;
 
   width: 100%;
   font-size: 14px;
+  font-weight: 600;
   font-family: sans-serif;
   text-align: left;
   text-indent: 10rem;
@@ -139,11 +138,12 @@
 .Toastify__toast {
   border: 1px solid white !important;
   border-radius: 1.3em !important;
-  background: rgb(15, 21, 26) !important;
+  background: #f7f3e3 !important;
+  font-weight: 500;
 }
 
 .toastProgress {
-  background: rgb(124, 134, 143) !important;
+  background: rgb(0, 0, 0) !important;
 }
 
 @media (max-width: 1300px) {

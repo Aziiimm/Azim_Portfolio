@@ -1,6 +1,7 @@
 import React from "react";
 import heroimage from "../assets/heroimage.jpg";
 import "../styles/about.css";
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 const About = () => {
   return (
@@ -25,7 +26,18 @@ const About = () => {
               I'm currently a student at CUNY City College, and I have a deep
               passion for problem solving, programming, and creating. I am a
               quick learner, and I enjoy exploring new technologies and
-              expanding my skillset!
+              expanding my skillset! Feel free to reach out to me, and check out
+              my GitHub, LinkedIn, and my{" "}
+              <a
+                href="https://drive.google.com/file/d/1pXadrtqKYp_A6DVxfapFdG2HVgvsInTE/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className=""
+              >
+                <strong>Resume</strong>
+                <MdOutlineArrowOutward />
+              </a>
+              .
             </p>
 
             <p className="shortbio">
