@@ -37,7 +37,7 @@ const About = () => {
                 <strong>GitHub</strong>
                 <MdOutlineArrowOutward />
               </a>
-              ,&nbsp;
+              , &nbsp;
               <a
                 href="https://www.linkedin.com/in/your-linkedin-profile"
                 target="_blank"

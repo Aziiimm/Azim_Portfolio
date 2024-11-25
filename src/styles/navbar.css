@@ -120,7 +120,7 @@
   }
 
   .nav__menu.open {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.45);
     display: flex;
   }
 
