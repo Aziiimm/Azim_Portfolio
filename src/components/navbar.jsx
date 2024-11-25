@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import BurgerMenuIcon from "./burgermenuicon";
 import Socials from "./socials";
 import "../styles/navbar.css";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +23,7 @@ function Navbar() {
             type="button"
             onClick={() => setIsOpen(!isOpen)}
           >
-            <BurgerMenuIcon />
+            <GiHamburgerMenu />
           </button>
 
           <div className={`nav__menu ${isOpen ? "open" : ""}`}>
@@ -45,7 +45,9 @@ function Navbar() {
               </a>
             </div>
 
-            <Socials containerClass="nav__socials" linkClass="nav__icons" />
+            <span>
+              <Socials containerClass="nav__socials" linkClass="nav__icons" />
+            </span>
           </div>
         </div>
       </nav>

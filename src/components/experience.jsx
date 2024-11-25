@@ -14,7 +14,7 @@ function Experience() {
           <img src={STEMKasa} alt="STEMKasa logo"></img>
           <div>
             <h2 className="experience__employer">
-              Software Engineer Intern · STEMKasa
+              <strong>Software Engineer Intern · STEMKasa</strong>
             </h2>
             <p className="experience__time">May 2024 - Present</p>
             <p className="experience__description">

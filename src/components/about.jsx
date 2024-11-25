@@ -27,7 +27,27 @@ const About = () => {
               passion for problem solving, programming, and creating. I am a
               quick learner, and I enjoy exploring new technologies and
               expanding my skillset! Feel free to reach out to me, and check out
-              my GitHub, LinkedIn, and my{" "}
+              my&nbsp;
+              <a
+                href="https://github.com/your-github-username"
+                target="_blank"
+                rel="noopener noreferrer"
+                className=""
+              >
+                <strong>GitHub</strong>
+                <MdOutlineArrowOutward />
+              </a>
+              ,&nbsp;
+              <a
+                href="https://www.linkedin.com/in/your-linkedin-profile"
+                target="_blank"
+                rel="noopener noreferrer"
+                className=""
+              >
+                <strong>LinkedIn</strong>
+                <MdOutlineArrowOutward />
+              </a>
+              , and my&nbsp;
               <a
                 href="https://drive.google.com/file/d/1pXadrtqKYp_A6DVxfapFdG2HVgvsInTE/view?usp=sharing"
                 target="_blank"
@@ -41,7 +61,7 @@ const About = () => {
             </p>
 
             <p className="shortbio">
-              Outside of tech, I'm a huge sports enthusaist, I love playing or
+              Outside of tech, I'm a huge sports enthusiast. I love playing or
               watching basketball. I also enjoy reading or playing sci-fi games,
               puzzling, or spending time with friends!
             </p>

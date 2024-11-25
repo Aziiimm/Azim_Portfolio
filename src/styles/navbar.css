@@ -90,8 +90,8 @@
     min-width: 2.5rem;
     min-height: 2.5rem;
     margin-right: 16px;
+    font-size: 32px;
   }
-
   .nav__menu {
     display: none;
     flex-direction: column;
@@ -120,8 +120,18 @@
   }
 
   .nav__menu.open {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
     display: flex;
+  }
+
+  .nav__menu.open .nav__socials,
+  .nav__menu.open .nav__socials a,
+  .nav__menu.open .nav__icons {
+    color: white !important; /* Ensure white color */
+  }
+
+  .nav__menu span {
+    display: none;
   }
 }
 
