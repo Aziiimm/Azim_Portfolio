@@ -79,13 +79,15 @@
 }
 
 .project-stack div {
-  font-size: 12px;
+  font-size: 13px;
   text-align: center;
-  border-radius: 0.8em;
+  border-radius: 0.5em;
   padding: 0.2rem 0.4rem;
-  background-color: #11263f;
+  /* background-color: #11263f; */
+  background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  color: white;
+  color: black;
+  font-weight: 500;
 }
 
 @media (max-width: 1000px) {
