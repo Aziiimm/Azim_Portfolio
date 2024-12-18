@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.d5b1dbbd.css",
-    "main.js": "/static/js/main.09f8ae68.js",
+    "main.js": "/static/js/main.39bf9729.js",
     "static/js/453.b506345a.chunk.js": "/static/js/453.b506345a.chunk.js",
     "static/media/binyc.gif": "/static/media/binyc.4c61f67c1e465784e918.gif",
     "static/media/textgame.gif": "/static/media/textgame.41ac2203fe6b9429970a.gif",
+    "static/media/quickbid.gif": "/static/media/quickbid.fabbbd48390c37da3615.gif",
     "static/media/shotcaller.gif": "/static/media/shotcaller.b9b9cac141e0ffe2bbd0.gif",
     "static/media/Montserrat-VariableFont_wght.ttf": "/static/media/Montserrat-VariableFont_wght.7e687123cd4528224ce5.ttf",
     "static/media/heroimage.jpg": "/static/media/heroimage.c7fa3e5ad1a05fd369eb.jpg",
@@ -31,11 +32,11 @@
     "static/media/html.svg": "/static/media/html.8664168d5bc90b1a24396f85aadbf623.svg",
     "index.html": "/index.html",
     "main.d5b1dbbd.css.map": "/static/css/main.d5b1dbbd.css.map",
-    "main.09f8ae68.js.map": "/static/js/main.09f8ae68.js.map",
+    "main.39bf9729.js.map": "/static/js/main.39bf9729.js.map",
     "453.b506345a.chunk.js.map": "/static/js/453.b506345a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d5b1dbbd.css",
-    "static/js/main.09f8ae68.js"
+    "static/js/main.39bf9729.js"
   ]
 }
