@@ -3,6 +3,7 @@ import textgame from "../assets/projects/textgame.gif";
 import binyc from "../assets/projects/binyc.gif";
 import shotcaller from "../assets/projects/shotcaller.gif";
 import encrypter from "../assets/projects/encrypter.gif";
+import quickbid from "../assets/projects/quickbid.gif";
 import "../styles/projects.css";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
@@ -27,6 +28,23 @@ const projectData = [
     link: "https://shot-caller-five.vercel.app/",
   },
   {
+    img: quickbid,
+    alt: "Quickbid project",
+    title: "QuickBid",
+    description:
+      "An E-Bidding marketplace where you can create auctions, make purchases, and post bids!",
+    techStack: [
+      "Vite",
+      "React",
+      "Express",
+      "Tailwind",
+      "TypeScript",
+      "Supabase",
+      "Stripe API",
+    ],
+    link: "https://github.com/Aziiimm/quickbid",
+  },
+  {
     img: binyc,
     alt: "BINyc project",
     title: "BINyc",
@@ -40,7 +58,7 @@ const projectData = [
     alt: "Customer Encrypter/Decrypter project",
     title: "Custom Encrypter/Decrypter",
     description:
-      "A custom encryption/decryption tool applying an original cipher method! ",
+      "A custom encryption/decryption tool applying an original cipher method!",
     techStack: ["Java"],
     link: "https://github.com/Aziiimm/custom-encrypter-decrypter",
   },

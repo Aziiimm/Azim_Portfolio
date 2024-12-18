@@ -33,7 +33,7 @@ const Skills = () => {
     { name: "HTML5", img: html5, category: ["frontend"] },
     { name: "CSS3", img: css3, category: ["frontend"] },
     { name: "Tailwind", img: tailwindcss, category: ["frontend"] },
-    // { name: "Next.js", img: nextjs, category: ["frontend", "backend"] },
+    { name: "Next.js", img: nextjs, category: ["frontend", "backend"] },
     { name: "jQuery", img: jquery, category: ["frontend"] },
     { name: "Node.js", img: nodejs, category: ["backend"] },
     { name: "Express.js", img: expressjs, category: ["backend"] },
@@ -44,7 +44,7 @@ const Skills = () => {
     { name: "MySQL", img: sql, category: ["database"] },
     { name: "MongoDB", img: mongodb, category: ["database"] },
     { name: "PostgreSQL", img: postgres, category: ["database"] },
-    // { name: "AWS", img: aws, category: ["database", "tools"] },
+    { name: "AWS", img: aws, category: ["database", "tools"] },
     { name: "Git", img: git, category: ["tools"] },
     { name: "Docker", img: docker, category: ["tools"] },
   ];
