@@ -29,7 +29,7 @@ const About = () => {
               expanding my skillset! Feel free to reach out to me, and check out
               my&nbsp;
               <a
-                href="https://github.com/your-github-username"
+                href="https://github.com/Aziiimm"
                 target="_blank"
                 rel="noopener noreferrer"
                 className=""
@@ -39,7 +39,7 @@ const About = () => {
               </a>
               , &nbsp;
               <a
-                href="https://www.linkedin.com/in/your-linkedin-profile"
+                href="https://www.linkedin.com/in/azim-rahat/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className=""
@@ -49,7 +49,7 @@ const About = () => {
               </a>
               , and my&nbsp;
               <a
-                href="https://drive.google.com/file/d/12l-rxP0f2a8476wV8263DU5OBuqBg5gg/view?usp=sharing"
+                href="https://drive.google.com/file/d/1PDBzZbdmZxQl_AfixZ-BRN11Me7Z57xe/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className=""
