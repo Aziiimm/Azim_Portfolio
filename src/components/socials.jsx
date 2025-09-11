@@ -24,7 +24,7 @@ function Socials({ containerClass, linkClass }) {
       </a>
       <a
         className={linkClass}
-        href="https://drive.google.com/file/d/1PYzgxmwO4WVs1PKDupPnW8YVmuQoXPy4/view?usp=sharing"
+        href="https://drive.google.com/file/d/15ohFvfw4gwTH7TieLKFtdNLia3JebI4Z/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
         title="Resume"
