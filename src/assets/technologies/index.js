@@ -18,26 +18,34 @@ import docker from "./docker.svg";
 import expressjs from "./expressjs.svg";
 import nextjs from "./nextjs.svg";
 import postgres from "./postgres.svg";
+import scikit from "./scikit.png";
+import tensorflow from "./tensorflow.png";
+import pandas from "./pandas_white.png";
+import redis from "./redis.svg";
 
 export {
+  python,
   cplusplus,
-  java,
   javascript,
-  html5,
-  css3,
+  ts,
+  java,
+  postgres,
   reactjs,
+  nodejs,
+  expressjs,
+  nextjs,
+  flask,
   tailwindcss,
+  scikit,
+  tensorflow,
+  pandas,
+  aws,
+  docker,
   git,
+  redis,
+  css3,
+  html5,
   mongodb,
   sql,
   jquery,
-  nodejs,
-  python,
-  ts,
-  flask,
-  aws,
-  docker,
-  expressjs,
-  nextjs,
-  postgres,
 };

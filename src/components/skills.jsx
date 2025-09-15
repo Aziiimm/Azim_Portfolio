@@ -1,94 +1,65 @@
-import React, { useState } from "react";
-import {
-  cplusplus,
-  java,
-  javascript,
-  html5,
-  css3,
-  reactjs,
-  tailwindcss,
-  git,
-  mongodb,
-  sql,
-  jquery,
-  nodejs,
-  python,
-  ts,
-  flask,
-  aws,
-  docker,
-  expressjs,
-  nextjs,
-  postgres,
-} from "../assets/technologies";
-import "../styles/skills.css";
+import React from "react";
+import * as technologies from "../assets/technologies";
 
 const Skills = () => {
-  const [selectedCategory, setSelectedCategory] = useState("all");
-
   const techs = [
-    { name: "JavaScript", img: javascript, category: ["frontend", "backend"] },
-    { name: "TypeScript", img: ts, category: ["frontend", "backend"] },
-    { name: "React", img: reactjs, category: ["frontend"] },
-    { name: "HTML5", img: html5, category: ["frontend"] },
-    { name: "CSS3", img: css3, category: ["frontend"] },
-    { name: "Tailwind", img: tailwindcss, category: ["frontend"] },
-    { name: "Next.js", img: nextjs, category: ["frontend", "backend"] },
-    { name: "jQuery", img: jquery, category: ["frontend"] },
-    { name: "Node.js", img: nodejs, category: ["backend"] },
-    { name: "Express.js", img: expressjs, category: ["backend"] },
-    { name: "Python", img: python, category: ["backend"] },
-    { name: "Flask", img: flask, category: ["backend"] },
-    { name: "C++", img: cplusplus, category: ["backend"] },
-    { name: "Java", img: java, category: ["backend"] },
-    { name: "MySQL", img: sql, category: ["database"] },
-    { name: "MongoDB", img: mongodb, category: ["database"] },
-    { name: "PostgreSQL", img: postgres, category: ["database"] },
-    { name: "AWS", img: aws, category: ["database", "tools"] },
-    { name: "Git", img: git, category: ["tools"] },
-    { name: "Docker", img: docker, category: ["tools"] },
+    { name: "JavaScript", img: technologies.javascript },
+    { name: "TypeScript", img: technologies.ts },
+    { name: "React", img: technologies.reactjs },
+    { name: "HTML5", img: technologies.html5 },
+    { name: "CSS3", img: technologies.css3 },
+    { name: "Tailwind", img: technologies.tailwindcss },
+    { name: "Next.js", img: technologies.nextjs },
+    { name: "jQuery", img: technologies.jquery },
+    { name: "Node.js", img: technologies.nodejs },
+    { name: "Express.js", img: technologies.expressjs },
+    { name: "Python", img: technologies.python },
+    { name: "Flask", img: technologies.flask },
+    { name: "C++", img: technologies.cplusplus },
+    { name: "Java", img: technologies.java },
+    { name: "MySQL", img: technologies.sql },
+    { name: "MongoDB", img: technologies.mongodb },
+    { name: "PostgreSQL", img: technologies.postgres },
+    { name: "AWS", img: technologies.aws },
+    { name: "Git", img: technologies.git },
+    { name: "Docker", img: technologies.docker },
+    { name: "Redis", img: technologies.redis },
+    { name: "Scikit-learn", img: technologies.scikit },
+    { name: "TensorFlow", img: technologies.tensorflow },
+    { name: "Pandas", img: technologies.pandas },
   ];
 
-  const categories = ["all", "frontend", "backend", "database", "tools"];
-
-  const filteredTechs =
-    selectedCategory === "all"
-      ? techs
-      : techs.filter((tech) => tech.category.includes(selectedCategory));
-
   return (
-    <section className="container" id="skills">
-      <header>
-        <h1 className="title">Technical Skills</h1>
-      </header>
+    <section className="mb-8 sm:mb-16" id="skills">
+      <h2 className="mb-4 text-2xl font-semibold text-white sm:text-3xl">
+        Technical Skills
+      </h2>
 
-      <div className="filters">
-        {categories.map((category) => (
-          <button
-            key={category}
-            className={`filter-btn ${
-              selectedCategory === category ? "active" : ""
-            }`}
-            onClick={() => setSelectedCategory(category)}
-          >
-            {category.charAt(0).toUpperCase() + category.slice(1)}
-          </button>
-        ))}
+      <div className="relative overflow-hidden">
+        <div
+          className="skills-carousel flex gap-4 py-4 sm:gap-6"
+          style={{
+            animation: `scroll-${techs.length} 15s linear infinite`,
+          }}
+        >
+          {techs.map((tech, techIndex) => (
+            <div
+              className="skill-card flex min-w-[100px] flex-shrink-0 cursor-pointer flex-col items-center justify-center rounded-lg bg-white/60 p-3 shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg sm:min-w-[120px] sm:p-4"
+              key={tech.name}
+            >
+              <img
+                className="mb-1 h-8 w-8 sm:mb-2 sm:h-12 sm:w-12"
+                src={tech.img}
+                alt={`${tech.name} logo`}
+                loading="lazy"
+              />
+              <span className="text-center text-xs font-medium text-gray-700 sm:text-sm">
+                {tech.name}
+              </span>
+            </div>
+          ))}
+        </div>
       </div>
-
-      <ul className="skills">
-        {filteredTechs.map((tech) => (
-          <li className="techs" key={tech.name}>
-            <img
-              className="logo"
-              src={tech.img}
-              alt={`${tech.name} logo`}
-              loading="lazy"
-            />
-            {tech.name}
-          </li>
-        ))}
-      </ul>
     </section>
   );
 };
