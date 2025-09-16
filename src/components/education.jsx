@@ -11,7 +11,7 @@ function Education() {
       location: "New York, NY",
       duration: "Graduation: December 2026",
       description:
-        "Relevant Coursework: Data Structures, Algorithms, Operating Systems, Database Systems, Systems Design, Software Engineering, Computer Architecture, Statistics, Image Processing, Computer Security, Machine Learning, Artificial Intelligence.",
+        "Relevant Coursework: Data Structures, Algorithms, Operating Systems, Database Systems, Systems Design, Software Engineering, Computer Architecture, Statistics, Image Processing, Machine Learning, Artificial Intelligence.",
     },
   ];
 
