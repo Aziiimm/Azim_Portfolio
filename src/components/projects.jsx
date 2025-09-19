@@ -13,7 +13,7 @@ const projectData = [
     alt: "Jumble project",
     title: "Jumble",
     description:
-      "Multiplayer party game platform with real time lobbies & gameplay. Play against friends or AI!",
+      "Multiplayer party game platform with real time lobbies & gameplay. Play against friends!",
     link: "https://jumble-nine.vercel.app/",
     techStack: [
       "WebSockets",

@@ -5,7 +5,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 const Hero = () => {
   // Resume link - update this in one place to change everywhere
   const resumeLink =
-    "https://drive.google.com/file/d/1GpuuU16KXIDun1I5XZ70bTQTGWS0y4gx/view?usp=sharing";
+    "https://drive.google.com/file/d/1MIuRIwRqPOdJcc7SSObIFB4_qH3Fbo70/view?usp=sharing";
 
   return (
     <section className="mb-8">
