@@ -3,9 +3,9 @@ import heroimage from "../assets/heroimage.jpg";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 const Hero = () => {
-  // Resume link - update this in one place to change everywhere
+  // Link to the resume file
   const resumeLink =
-    "https://drive.google.com/file/d/1MIuRIwRqPOdJcc7SSObIFB4_qH3Fbo70/view?usp=sharing";
+    "https://drive.google.com/file/d/1yLnD0Yos_1iFUQ0pEHAqOk9-GG2bM27K/view?usp=sharing";
 
   return (
     <section className="mb-8">
