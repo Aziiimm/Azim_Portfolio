@@ -5,11 +5,12 @@ import shotcaller from "../assets/projects/shotcaller.gif";
 import encrypter from "../assets/projects/encrypter.gif";
 import quickbid from "../assets/projects/quickbid.gif";
 import jumble from "../assets/projects/jumble_banner.png";
+import cosmiccare from "../assets/projects/cosmiccare.gif";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 const projectData = [
   {
-    img: jumble, // No GIF ready yet
+    img: jumble,
     alt: "Jumble project",
     title: "Jumble",
     description:
@@ -41,6 +42,22 @@ const projectData = [
       "PostgreSQL",
       "TypeScript",
       "BeautifulSoup",
+    ],
+  },
+  {
+    img: cosmiccare,
+    alt: "CosmicCare project",
+    title: "CosmicCare",
+    description:
+      "Emotional wellness app transforming your daily emotional journey into an interactive 3D solar system experience.",
+    link: "https://cosmiccare.vercel.app/",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Three.js",
+      "Supabase",
+      "OpenAI Whisper",
+      "Gemini API",
     ],
   },
   {
