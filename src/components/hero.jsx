@@ -8,7 +8,7 @@ const Hero = () => {
     "https://drive.google.com/file/d/1yLnD0Yos_1iFUQ0pEHAqOk9-GG2bM27K/view?usp=sharing";
 
   return (
-    <section className="mb-8">
+    <section className="mb-8" id="about">
       <div className="flex flex-col items-center gap-8 md:gap-12 lg:flex-row">
         {/* Image - appears first on mobile, second on desktop */}
         <div className="order-1 flex flex-1 justify-center lg:order-2">
