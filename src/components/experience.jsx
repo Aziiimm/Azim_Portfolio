@@ -1,10 +1,21 @@
 import React from "react";
+import OnePay from "../assets/employers/onepay.png";
 import STEMKasa from "../assets/employers/stemkasa.jpg";
 import Google from "../assets/employers/google.webp";
 import CCNY from "../assets/employers/ccny.png";
 
 function Experience() {
   const experiences = [
+    {
+      logo: OnePay,
+      alt: "OnePay logo",
+      title: "Incoming Software Engineer Intern",
+      company: "OnePay",
+      location: "New York, NY",
+      duration: "June 2026",
+      description:
+        "Incoming Software Engineer Intern at OnePay, a fintech startup revolutionizing payments.",
+    },
     {
       logo: STEMKasa,
       alt: "STEMKasa logo",
