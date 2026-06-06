@@ -33,7 +33,7 @@ const projectData = [
     alt: "GPU-Accelerated Recommender System",
     title: "GPU-Accelerated Recommender",
     description:
-      "A GPU-accelerated recommender pipline on Hugging Face Amazon Reviews 2023 Dataset with over 571M reviews.",
+      "A GPU-accelerated recommender pipline on Hugging Face Amazon Reviews 2023 Dataset with over 571M reviews and 600k+ items.",
     link: "https://github.com/Aziiimm/capstone",
     techStack: [
       "NVIDIA Rapids (cuDF, cuML)",
