@@ -31,7 +31,7 @@ const projectData = [
   {
     img: capstone,
     alt: "GPU-Accelerated Recommender System",
-    title: "GPU-Accelerated Recommender System",
+    title: "GPU-Accelerated Recommender",
     description:
       "A GPU-accelerated recommender pipline on Hugging Face Amazon Reviews 2023 Dataset with over 571M reviews.",
     link: "https://github.com/Aziiimm/capstone",
