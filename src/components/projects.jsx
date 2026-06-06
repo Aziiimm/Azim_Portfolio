@@ -6,6 +6,7 @@ import encrypter from "../assets/projects/encrypter.gif";
 import quickbid from "../assets/projects/quickbid.gif";
 import jumble from "../assets/projects/jumble_banner.png";
 import cosmiccare from "../assets/projects/cosmiccare.gif";
+import capstone from "../assets/projects/capstone.png";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 const projectData = [
@@ -25,6 +26,24 @@ const projectData = [
       "TypeScript",
       "Express",
       "PostgreSQL",
+    ],
+  },
+  {
+    img: capstone,
+    alt: "GPU-Accelerated Recommender System",
+    title: "GPU-Accelerated Recommender System",
+    description:
+      "A GPU-accelerated recommender pipline on Hugging Face Amazon Reviews 2023 Dataset with over 571M reviews.",
+    link: "https://github.com/Aziiimm/capstone",
+    techStack: [
+      "NVIDIA Rapids (cuDF, cuML)",
+      "CUDA",
+      "Dask",
+      "Python",
+      "Pandas",
+      "Scikit-learn",
+      "FastAPI",
+      "React",
     ],
   },
   {

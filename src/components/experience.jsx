@@ -32,7 +32,7 @@ function Experience() {
       title: "Software Engineering Fellow",
       company: "Google",
       location: "New York, NY",
-      duration: "Feb 2025 – May 2025",
+      duration: "Feb 2025 - May 2025",
       description:
         "Selected from a competitive pool of 350+ applicants for Google Software Engineering Program; received 1:1 mentorship from Google engineers, strengthening coding and problem-solving skills.",
     },
@@ -42,7 +42,7 @@ function Experience() {
       title: "Computer Science Tutor",
       company: "City College of New York",
       location: "New York, NY",
-      duration: "Aug 2024 – May 2025",
+      duration: "Aug 2024 - May 2025",
       description:
         "Tutored 20+ students in Data Structures, Algorithms, and Operating Systems, reinforcing understanding of dynamic programming, complexity analysis, and memory management.",
     },
