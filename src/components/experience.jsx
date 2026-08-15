@@ -9,12 +9,12 @@ function Experience() {
     {
       logo: OnePay,
       alt: "OnePay logo",
-      title: "Incoming Software Engineer Intern",
+      title: "Software Engineer Intern",
       company: "OnePay",
       location: "New York, NY",
-      duration: "June 2026",
+      duration: "June 2026 - Aug 2026",
       description:
-        "Incoming Software Engineer Intern at OnePay, a fintech startup revolutionizing payments.",
+        "Built an internal voice-agent QA platform to replace a $60k/yr vendor tool, using an LLM-driven simulated caller to test a customer-support voice agent over live audio. Automated manual phone-call testing and grading, increasing eval throughput 10x.",
     },
     {
       logo: STEMKasa,
@@ -24,7 +24,7 @@ function Experience() {
       location: "New York, NY",
       duration: "May 2024 - May 2025",
       description:
-        "Developed RESTful APIs with Flask and Express integrating GPT-4 for a personalized learning assistant, optimizing MongoDB queries to reduce response time by 10%. Wrote 50+ automated end-to-end tests and enhanced user interaction with reusable React components in Agile sprints.",
+        "Developed RESTful APIs with Flask and Express integrating GPT-4 and Whisper for a personalized learning assistant, and introduced a Redis caching layer that cut average API response time by 22%. Wrote 50+ automated tests and shipped reusable React components used across the team.",
     },
     {
       logo: Google,
