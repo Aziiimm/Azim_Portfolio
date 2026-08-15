@@ -1,5 +1,5 @@
 import React from "react";
-import CCNY from "../assets/employers/ccny.png";
+import CCNY from "../assets/employers/ccny.webp";
 
 function Education() {
   const education = [

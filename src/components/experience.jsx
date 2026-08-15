@@ -1,8 +1,8 @@
 import React from "react";
-import OnePay from "../assets/employers/onepay.png";
-import STEMKasa from "../assets/employers/stemkasa.jpg";
+import OnePay from "../assets/employers/onepay.webp";
+import STEMKasa from "../assets/employers/stemkasa.webp";
 import Google from "../assets/employers/google.webp";
-import CCNY from "../assets/employers/ccny.png";
+import CCNY from "../assets/employers/ccny.webp";
 
 function Experience() {
   const experiences = [
@@ -24,7 +24,7 @@ function Experience() {
       location: "New York, NY",
       duration: "May 2024 - May 2025",
       description:
-        "Developed RESTful APIs with Flask and Express integrating GPT-4 and Whisper for a personalized learning assistant, and introduced a Redis caching layer that cut average API response time by 22%. Wrote 50+ automated tests and shipped reusable React components used across the team.",
+        "Implemented RESTful APIs with Flask and Express integrating GPT-4 and Whisper for a personalized learning assistant. Cut average API response time by 22% with a Redis caching layer, and authored 50+ tests integrated into CI/CD pipelines.",
     },
     {
       logo: Google,

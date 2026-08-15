@@ -1,12 +1,16 @@
 import React from "react";
-// import textgame from "../assets/projects/textgame.gif";
-import binyc from "../assets/projects/binyc.gif";
-import shotcaller from "../assets/projects/shotcaller.gif";
-import encrypter from "../assets/projects/encrypter.gif";
-import quickbid from "../assets/projects/quickbid.gif";
-import jumble from "../assets/projects/jumble_banner.png";
-import cosmiccare from "../assets/projects/cosmiccare.gif";
-import capstone from "../assets/projects/capstone.png";
+import binycMp4 from "../assets/projects/binyc.mp4";
+import binycWebm from "../assets/projects/binyc.webm";
+import shotcallerMp4 from "../assets/projects/shotcaller.mp4";
+import shotcallerWebm from "../assets/projects/shotcaller.webm";
+import encrypterMp4 from "../assets/projects/encrypter.mp4";
+import encrypterWebm from "../assets/projects/encrypter.webm";
+import quickbidMp4 from "../assets/projects/quickbid.mp4";
+import quickbidWebm from "../assets/projects/quickbid.webm";
+import jumble from "../assets/projects/jumble_banner.webp";
+import cosmiccareMp4 from "../assets/projects/cosmiccare.mp4";
+import cosmiccareWebm from "../assets/projects/cosmiccare.webm";
+import capstone from "../assets/projects/capstone.webp";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 const projectData = [
@@ -47,8 +51,8 @@ const projectData = [
     ],
   },
   {
-    img: shotcaller,
-    alt: "ShotCaller project",
+    video: { mp4: shotcallerMp4, webm: shotcallerWebm },
+    alt: "ShotCaller project demo",
     title: "ShotCaller",
     description:
       "Fantasy basketball matchup predictor using machine learning & data analysis.",
@@ -64,8 +68,8 @@ const projectData = [
     ],
   },
   {
-    img: cosmiccare,
-    alt: "CosmicCare project",
+    video: { mp4: cosmiccareMp4, webm: cosmiccareWebm },
+    alt: "CosmicCare project demo",
     title: "CosmicCare",
     description:
       "Emotional wellness app transforming your daily emotional journey into an interactive 3D solar system experience.",
@@ -80,8 +84,8 @@ const projectData = [
     ],
   },
   {
-    img: quickbid,
-    alt: "Quickbid project",
+    video: { mp4: quickbidMp4, webm: quickbidWebm },
+    alt: "QuickBid project demo",
     title: "QuickBid",
     description:
       "A realtime e-bidding web app allowing users to list, purchase, and bid on items.",
@@ -96,8 +100,8 @@ const projectData = [
     ],
   },
   {
-    img: binyc,
-    alt: "BINyc project",
+    video: { mp4: binycMp4, webm: binycWebm },
+    alt: "BINyc project demo",
     title: "BINyc",
     description:
       "A trash reporting web app with interactive map visualizations, aiming to keep NYC clean.",
@@ -105,8 +109,8 @@ const projectData = [
     techStack: ["React", "Express", "Tailwind CSS", "Leaflet", "MongoDB"],
   },
   {
-    img: encrypter,
-    alt: "Customer Encrypter/Decrypter project",
+    video: { mp4: encrypterMp4, webm: encrypterWebm },
+    alt: "Custom Encrypter/Decrypter project demo",
     title: "Custom Encrypter",
     description:
       "An encryption & decryption tool applying a custom cipher method for .txt file encryption.",
@@ -129,10 +133,24 @@ const Projects = () => {
           >
             <div className="flex flex-col items-stretch gap-3 md:gap-4 lg:flex-row">
               <div className="w-full flex-shrink-0 md:w-full lg:w-80">
-                {project.img ? (
+                {project.video ? (
+                  <video
+                    className="h-48 w-full rounded-lg object-cover sm:h-56 md:h-64 lg:h-full lg:rounded-none"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    preload="metadata"
+                    aria-label={project.alt}
+                  >
+                    <source src={project.video.webm} type="video/webm" />
+                    <source src={project.video.mp4} type="video/mp4" />
+                  </video>
+                ) : project.img ? (
                   <img
                     src={project.img}
                     alt={project.alt}
+                    loading="lazy"
                     className="h-48 w-full rounded-lg object-cover sm:h-56 md:h-64 lg:h-full lg:rounded-none"
                   />
                 ) : (
