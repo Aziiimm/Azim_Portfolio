@@ -72,10 +72,10 @@ const Skills = () => {
   return (
     <section className="mb-8 sm:mb-16" id="skills">
       <div className="mb-4 flex flex-col gap-1">
-        <span className="font-mono text-xs uppercase tracking-widest text-bp-label">
+        <span className="text-bp-label font-mono text-xs uppercase tracking-widest">
           {skillCategories.length} Categories &middot; {skillCount} Skills
         </span>
-        <h2 className="font-mono text-3xl font-bold tracking-tight text-bp-text sm:text-4xl">
+        <h2 className="text-bp-text font-mono text-3xl font-bold tracking-tight sm:text-4xl">
           Technical Skills
         </h2>
       </div>
@@ -84,11 +84,11 @@ const Skills = () => {
         {skillCategories.map((category) => (
           <div key={category.label} className="flex flex-col gap-2.5">
             <div className="flex items-baseline gap-3">
-              <span className="whitespace-nowrap font-mono text-[11px] uppercase tracking-wider text-bp-muted">
+              <span className="text-bp-muted whitespace-nowrap font-mono text-[11px] uppercase tracking-wider">
                 {category.label}
               </span>
               <span
-                className="h-px flex-1 bg-bp-line"
+                className="bg-bp-line h-px flex-1"
                 aria-hidden="true"
               ></span>
             </div>
@@ -96,7 +96,7 @@ const Skills = () => {
               {category.items.map((tech) => (
                 <span
                   key={tech.name}
-                  className="inline-flex items-center gap-2 rounded border border-bp-line bg-bp-chip px-3 py-1.5 font-mono text-xs text-bp-text transition-colors duration-300 hover:border-bp-accent"
+                  className="border-bp-line bg-bp-chip text-bp-text hover:border-bp-accent inline-flex items-center gap-2 rounded border px-3 py-1.5 font-mono text-xs transition-colors duration-300"
                 >
                   {tech.img && (
                     <img

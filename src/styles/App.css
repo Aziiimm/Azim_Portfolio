@@ -127,7 +127,7 @@ body::after {
    tinting much more readily than dark does, so both stops run at noticeably
    lower alpha than their dark-mode counterparts to avoid looking dirty. */
 :root.light body::before {
-  --glow-cyan: 0.13;
+  --glow-cyan: 0.08;
   background-image: radial-gradient(
     ellipse 1000px 700px at 15% -10%,
     rgba(255, 176, 92, var(--glow-cyan)),
@@ -136,7 +136,7 @@ body::after {
 }
 
 :root.light body::after {
-  --glow-amber: 0.075;
+  --glow-amber: 0.07;
   background-image: radial-gradient(
     ellipse 950px 650px at 112% 40%,
     rgba(255, 138, 61, var(--glow-amber)),
@@ -156,6 +156,12 @@ body::after {
   }
   body::after {
     --glow-amber: 0.048;
+  }
+  :root.light body::before {
+    --glow-cyan: 0.15;
+  }
+  :root.light body::after {
+    --glow-amber: 0.13;
   }
 }
 

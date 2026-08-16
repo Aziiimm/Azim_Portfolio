@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section className="mb-8 sm:mb-16" id="about">
       <p className="text-bp-muted mb-4 text-center font-mono text-sm font-medium leading-relaxed sm:text-left sm:text-base lg:mb-6">
-        Hey👋! I'm a software engineer graduating from CUNY City College in
+        Hey 👋! I'm a software engineer graduating from CUNY City College in
         December 2026. I recently interned at OnePay, a fintech startup backed
         by Walmart.
       </p>

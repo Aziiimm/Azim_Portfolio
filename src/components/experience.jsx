@@ -115,10 +115,7 @@ function Experience() {
               {exp.tags.length > 0 && (
                 <div className="mt-2 flex max-w-2xl flex-wrap gap-x-3 gap-y-1">
                   {exp.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="text-bp-label font-mono text-xs"
-                    >
+                    <span key={tag} className="text-bp-label font-mono text-xs">
                       [{tag}]
                     </span>
                   ))}
