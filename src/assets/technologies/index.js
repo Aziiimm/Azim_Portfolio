@@ -8,7 +8,6 @@ import tailwindcss from "./tailwindcss.svg";
 import git from "./git.svg";
 import mongodb from "./mongodb.svg";
 import sql from "./mysql.svg";
-import jquery from "./jquery.svg";
 import nodejs from "./nodejs.svg";
 import python from "./python.svg";
 import ts from "./ts.svg";
@@ -22,6 +21,12 @@ import scikit from "./scikit.png";
 import tensorflow from "./tensorflow.png";
 import pandas from "./pandas_white.png";
 import redis from "./redis.svg";
+import django from "./django.svg";
+import selenium from "./selenium.svg";
+import graphql from "./graphql.svg";
+import kafka from "./apachekafka.svg";
+import nestjs from "./nestjs.svg";
+import kubernetes from "./kubernetes.svg";
 
 export {
   python,
@@ -35,10 +40,16 @@ export {
   expressjs,
   nextjs,
   flask,
+  django,
   tailwindcss,
   scikit,
   tensorflow,
   pandas,
+  selenium,
+  graphql,
+  kafka,
+  nestjs,
+  kubernetes,
   aws,
   docker,
   git,
@@ -47,5 +58,4 @@ export {
   html5,
   mongodb,
   sql,
-  jquery,
 };
