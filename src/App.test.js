@@ -9,5 +9,6 @@ test("renders name in the hero section", () => {
 
 test("renders navigation links", () => {
   render(<App />);
-  expect(screen.getByRole("navigation")).toBeInTheDocument();
+  const navs = screen.getAllByRole("navigation");
+  expect(navs.length).toBeGreaterThan(0);
 });

@@ -1,15 +1,104 @@
 @font-face {
-  font-family: "montserrat";
-  src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf") format(truetype);
+  font-family: "IBM Plex Mono";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("../assets/fonts/IBMPlexMono-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../assets/fonts/IBMPlexMono-700.woff2") format("woff2");
 }
 
 body {
-  font-family: "montserrat", sans-serif;
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background: linear-gradient(120deg, #0061ff, #73a9ff);
-  background-attachment: fixed;
+  background-color: #0f1524;
+  font-family:
+    -apple-system,
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+}
+
+/* Ambient glow, on its own fixed layers rather than background-attachment:fixed —
+   that CSS property is unreliable on mobile browsers (notably iOS Safari), where it
+   often ties the gradient's position to the full document height instead of the
+   visible viewport. A truly `position: fixed` element behaves consistently everywhere.
+   Split across ::before (cyan) and ::after (amber) so each can pulse on its own
+   timing instead of both breathing in perfect lockstep. */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  animation: glow-pulse ease-in-out infinite;
+  /* Promotes the layer to its own GPU compositor layer. Without this, mobile
+     browsers (iOS Safari in particular) can fail to smoothly animate opacity
+     on fixed-position pseudo-elements, making the pulse appear static. */
+  will-change: opacity;
+}
+
+body::before {
+  --glow-cyan: 0.16;
+  background-image: radial-gradient(
+    ellipse 1000px 700px at 15% -10%,
+    rgba(125, 211, 252, var(--glow-cyan)),
+    transparent 62%
+  );
+  animation-duration: 5s;
+}
+
+body::after {
+  --glow-amber: 0.065;
+  background-image: radial-gradient(
+    ellipse 950px 650px at 112% 40%,
+    rgba(242, 178, 92, var(--glow-amber)),
+    transparent 68%
+  );
+  animation-duration: 6.5s;
+  animation-delay: -2s;
+}
+
+@keyframes glow-pulse {
+  0%,
+  100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::before,
+  body::after {
+    animation: none;
+  }
+}
+
+/* Desktop: static, no pulse — the animation is mobile-only — and a touch
+   weaker than mobile's base intensity since the glow spans more screen area. */
+@media (min-width: 1024px) {
+  body::before,
+  body::after {
+    animation: none;
+  }
+  body::before {
+    --glow-cyan: 0.12;
+  }
+  body::after {
+    --glow-amber: 0.048;
+  }
 }
 
 a:link,
@@ -26,213 +115,4 @@ a:visited {
 html {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-}
-
-/* Skills carousel animation */
-@keyframes scroll-3 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes scroll-4 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes scroll-5 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes scroll-6 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes scroll-7 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes scroll-8 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes scroll-9 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes scroll-10 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes scroll-11 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes scroll-12 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes scroll-13 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes scroll-14 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes scroll-15 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes scroll-16 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes scroll-17 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes scroll-18 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes scroll-19 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes scroll-20 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes scroll-21 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes scroll-22 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes scroll-23 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes scroll-24 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-/* Hover pause for all scroll animations */
-[style*="animation: scroll-"]:hover {
-  animation-play-state: paused !important;
-}
-
-/* Alternative hover pause using class */
-.skills-carousel:hover {
-  animation-play-state: paused !important;
 }
