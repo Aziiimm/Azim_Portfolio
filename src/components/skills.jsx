@@ -72,7 +72,7 @@ const Skills = () => {
   return (
     <section className="mb-8 sm:mb-16" id="skills">
       <div className="mb-4 flex flex-col gap-1">
-        <span className="font-mono text-xs uppercase tracking-widest text-bp-accent">
+        <span className="font-mono text-xs uppercase tracking-widest text-bp-label">
           {skillCategories.length} Categories &middot; {skillCount} Skills
         </span>
         <h2 className="font-mono text-3xl font-bold tracking-tight text-bp-text sm:text-4xl">

@@ -14,17 +14,54 @@
   src: url("../assets/fonts/IBMPlexMono-700.woff2") format("woff2");
 }
 
+/* Theme tokens — dark (Blueprint) is the default/first-impression identity for
+   every visitor regardless of their OS preference; .light is opt-in via the
+   toggle only. bg/text/muted/accent are RGB triplets (not full color values)
+   so Tailwind's opacity-modifier syntax (e.g. bg-bp-bg/90) works on them. */
+:root {
+  --bp-bg: 15 21 36; /* #0f1524 */
+  --bp-surface: rgba(18, 26, 44, 0.55);
+  --bp-chip: rgba(125, 211, 252, 0.05);
+  --bp-text: 231 238 247; /* #e7eef7 */
+  --bp-muted: 140 160 190; /* #8ca0be */
+  --bp-accent: 125 211 252; /* #7dd3fc */
+  --bp-line: rgba(125, 211, 252, 0.16);
+  /* Secondary "colored" text (company names, tags, markers) — same as accent
+     in dark mode, kept separate so light mode can send it dark instead of
+     tinting every bit of body copy blue. */
+  --bp-label: 125 211 252;
+}
+
+:root.light {
+  --bp-bg: 250 250 251; /* near-white */
+  --bp-surface: rgba(17, 20, 26, 0.025);
+  --bp-chip: rgba(0, 97, 255, 0.06);
+  --bp-text: 17 20 26; /* near-black */
+  --bp-muted: 91 100 114;
+  --bp-accent: 0 97 255; /* original brand blue — reserved for buttons/interactive states */
+  --bp-line: rgba(17, 20, 26, 0.12);
+  --bp-label: 31 35 46; /* dark slate — company names/tags/markers read as black/gray, not blue */
+}
+
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background-color: #0f1524;
-  font-family:
-    -apple-system,
-    "Segoe UI",
-    "Helvetica Neue",
-    Arial,
-    sans-serif;
+  background-color: rgb(var(--bp-bg));
+  font-family: -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Crossfade the whole page's colors when the theme toggles, instead of an
+   instant snap. Low specificity (body *) on purpose — anything with its own
+   more specific transition (button hovers, the lantern glow, etc.) keeps its
+   own timing, this is only a fallback default for everything else. */
+body,
+body * {
+  transition:
+    background-color 0.35s ease,
+    color 0.35s ease,
+    border-color 0.35s ease,
+    fill 0.35s ease;
 }
 
 /* Ambient glow, on its own fixed layers rather than background-attachment:fixed —
@@ -86,6 +123,27 @@ body::after {
   }
 }
 
+/* Light mode keeps the same glow system, recolored warm/orange — white shows
+   tinting much more readily than dark does, so both stops run at noticeably
+   lower alpha than their dark-mode counterparts to avoid looking dirty. */
+:root.light body::before {
+  --glow-cyan: 0.13;
+  background-image: radial-gradient(
+    ellipse 1000px 700px at 15% -10%,
+    rgba(255, 176, 92, var(--glow-cyan)),
+    transparent 62%
+  );
+}
+
+:root.light body::after {
+  --glow-amber: 0.075;
+  background-image: radial-gradient(
+    ellipse 950px 650px at 112% 40%,
+    rgba(255, 138, 61, var(--glow-amber)),
+    transparent 68%
+  );
+}
+
 /* Desktop: static, no pulse — the animation is mobile-only — and a touch
    weaker than mobile's base intensity since the glow spans more screen area. */
 @media (min-width: 1024px) {
@@ -104,6 +162,47 @@ body::after {
 a:link,
 a:visited {
   text-decoration: none;
+}
+
+/* Theme toggle lantern: the interior "glow" cells fade color on click rather
+   than swapping between two separate icons, so it reads as the light itself
+   igniting. The button also blooms a soft warm halo the moment it's lit —
+   a one-time transition, not a continuous pulse. */
+.lantern-glow-cell {
+  transition: fill 0.5s ease;
+}
+.theme-toggle-btn {
+  transition:
+    box-shadow 0.5s ease,
+    border-color 0.3s ease;
+  /* Dark mode default: blue/cyan halo, matching the page's own cyan glow. */
+  box-shadow: 0 0 14px 2px rgba(125, 211, 252, 0.35);
+}
+.theme-toggle-btn.is-lit {
+  /* Light mode: warm amber halo, matching the lit lantern's flame color. */
+  box-shadow: 0 0 14px 2px rgba(242, 178, 92, 0.35);
+}
+
+/* Secondary button (Resume): outline-accent in dark mode (unchanged), solid
+   dark fill in light mode to match the two-tone button pair in the reference
+   — inverts to an outline on hover instead of the dark-mode direction. */
+.btn-secondary {
+  border: 1px solid rgb(var(--bp-accent));
+  color: rgb(var(--bp-accent));
+  background: transparent;
+}
+.btn-secondary:hover {
+  background: rgb(var(--bp-accent));
+  color: rgb(var(--bp-bg));
+}
+:root.light .btn-secondary {
+  border-color: rgb(var(--bp-text));
+  background: rgb(var(--bp-text));
+  color: rgb(var(--bp-bg));
+}
+:root.light .btn-secondary:hover {
+  background: transparent;
+  color: rgb(var(--bp-text));
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */

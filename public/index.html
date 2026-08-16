@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0f1524" />
 
+    <!-- Applies a saved light-mode preference before first paint, so returning
+         visitors who chose light don't see a flash of dark before it switches. -->
+    <script>
+      (function () {
+        try {
+          if (localStorage.getItem("theme") === "light") {
+            document.documentElement.classList.add("light");
+          }
+        } catch (e) {}
+      })();
+    </script>
+
     <!-- Google Analytics (GA4) — only loads if REACT_APP_GA_MEASUREMENT_ID is set at build time -->
     <script>
       (function () {

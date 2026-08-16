@@ -53,7 +53,7 @@ const Ctas = ({ row, large }) => (
       href={resumeLink}
       target="_blank"
       rel="noopener noreferrer"
-      className={`rounded border border-bp-accent text-center font-mono font-semibold text-bp-accent transition-all duration-300 hover:bg-bp-accent hover:text-bp-bg ${large ? "px-6 py-3 text-sm" : "px-4 py-2 text-xs"}`}
+      className={`btn-secondary rounded text-center font-mono font-semibold transition-all duration-300 ${large ? "px-6 py-3 text-sm" : "px-4 py-2 text-xs"}`}
     >
       Resume &rarr;
     </a>
