@@ -16,8 +16,8 @@ const Contact = () => {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background: #7dd3fc;
-      color: #0f1524;
+      background: rgb(var(--bp-accent));
+      color: rgb(var(--bp-bg));
       padding: 12px 20px;
       border-radius: 6px;
       font-family: "IBM Plex Mono", ui-monospace, "SFMono-Regular", "SF Mono", Consolas, monospace;

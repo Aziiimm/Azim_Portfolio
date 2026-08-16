@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { MobileThemeToggle } from "./theme-toggle";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,15 +20,18 @@ function Navbar() {
               Azim Rahat
             </a>
 
-            <button
-              aria-label="Open menu"
-              aria-expanded={isOpen}
-              className="text-2xl text-bp-text md:hidden"
-              type="button"
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              <GiHamburgerMenu />
-            </button>
+            <div className="flex items-center gap-3">
+              <MobileThemeToggle />
+              <button
+                aria-label="Open menu"
+                aria-expanded={isOpen}
+                className="text-2xl text-bp-text md:hidden"
+                type="button"
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                <GiHamburgerMenu />
+              </button>
+            </div>
           </div>
 
           <div

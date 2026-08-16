@@ -5,13 +5,14 @@ module.exports = {
     extend: {
       colors: {
         bp: {
-          bg: "#0f1524",
-          surface: "rgba(18,26,44,0.55)",
-          chip: "rgba(125,211,252,0.05)",
-          text: "#e7eef7",
-          muted: "#8ca0be",
-          accent: "#7dd3fc",
-          line: "rgba(125,211,252,0.16)",
+          bg: "rgb(var(--bp-bg) / <alpha-value>)",
+          surface: "var(--bp-surface)",
+          chip: "var(--bp-chip)",
+          text: "rgb(var(--bp-text) / <alpha-value>)",
+          muted: "rgb(var(--bp-muted) / <alpha-value>)",
+          accent: "rgb(var(--bp-accent) / <alpha-value>)",
+          label: "rgb(var(--bp-label) / <alpha-value>)",
+          line: "var(--bp-line)",
         },
       },
       fontFamily: {

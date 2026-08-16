@@ -34,8 +34,8 @@ const projectData = [
   },
   {
     img: capstone,
-    alt: "GPU-Accelerated Recommender System",
-    title: "GPU-Accelerated Recommender",
+    alt: "GPU-Accelerated Recommendation System",
+    title: "GPU-Accelerated Recommendation System",
     description:
       "A GPU-accelerated recommender pipline on Hugging Face Amazon Reviews 2023 Dataset with over 571M reviews and 600k+ items.",
     link: "https://github.com/Aziiimm/capstone",
@@ -130,14 +130,14 @@ const Projects = () => {
 
   return (
     <section className="mb-8 sm:mb-16" id="projects">
-      <h2 className="mb-4 font-mono text-3xl font-bold tracking-tight text-bp-text sm:text-4xl">
+      <h2 className="text-bp-text mb-4 font-mono text-3xl font-bold tracking-tight sm:text-4xl">
         Projects
       </h2>
       <div className="space-y-4">
         {visibleProjects.map((project, index) => (
           <div
             key={index}
-            className="rounded-md border border-bp-line bg-bp-surface p-3 transition-colors duration-300 hover:border-bp-accent sm:p-4"
+            className="border-bp-line bg-bp-surface hover:border-bp-accent rounded-md border p-3 transition-colors duration-300 sm:p-4"
           >
             <div className="flex flex-col items-stretch gap-3 md:gap-4 lg:flex-row">
               <div className="w-full flex-shrink-0 md:w-full lg:w-80">
@@ -162,8 +162,8 @@ const Projects = () => {
                     className="h-48 w-full rounded object-cover saturate-[0.9] sm:h-56 md:h-64 lg:h-full lg:rounded-none"
                   />
                 ) : (
-                  <div className="flex h-48 w-full items-center justify-center rounded border border-bp-line bg-bp-bg sm:h-56 md:h-64 lg:h-full">
-                    <span className="font-mono text-sm text-bp-muted">
+                  <div className="border-bp-line bg-bp-bg flex h-48 w-full items-center justify-center rounded border sm:h-56 md:h-64 lg:h-full">
+                    <span className="text-bp-muted font-mono text-sm">
                       Image Coming Soon
                     </span>
                   </div>
@@ -176,20 +176,20 @@ const Projects = () => {
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 font-mono text-base font-bold text-bp-text transition-colors duration-150 hover:text-bp-accent sm:text-lg"
+                      className="text-bp-text hover:text-bp-accent inline-flex items-center gap-1 font-mono text-base font-bold transition-colors duration-150 sm:text-lg"
                     >
                       {project.title}
-                      <MdOutlineArrowOutward className="text-lg text-bp-accent" />
+                      <MdOutlineArrowOutward className="text-bp-accent text-lg" />
                     </a>
                   </div>
-                  <p className="mb-2 whitespace-pre-line font-mono text-xs font-medium text-bp-muted sm:text-sm">
+                  <p className="text-bp-muted mb-2 whitespace-pre-line font-mono text-xs font-medium sm:text-sm">
                     {project.description}
                   </p>
                   <div className="flex flex-wrap gap-x-3 gap-y-1">
                     {project.techStack.map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className="font-mono text-xs text-bp-accent"
+                        className="text-bp-label font-mono text-xs"
                       >
                         [{tech}]
                       </span>
@@ -204,7 +204,7 @@ const Projects = () => {
       {hasMore && (
         <button
           onClick={() => setShowAll((prev) => !prev)}
-          className="mt-4 rounded border border-bp-line px-4 py-2 font-mono text-xs text-bp-muted transition-colors duration-300 hover:border-bp-accent hover:text-bp-accent"
+          className="border-bp-line text-bp-muted hover:border-bp-accent hover:text-bp-accent mt-4 rounded border px-4 py-2 font-mono text-xs transition-colors duration-300"
         >
           {showAll
             ? "View Less ↑"

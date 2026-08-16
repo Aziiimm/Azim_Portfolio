@@ -84,7 +84,7 @@ function Experience() {
         {experiences.map((exp, index) => (
           <div key={index} className="flex gap-4">
             <div className="flex w-3.5 flex-shrink-0 flex-col items-center">
-              <span className="bg-bp-accent mt-1.5 h-2.5 w-2.5 flex-shrink-0 rounded-full"></span>
+              <span className="bg-bp-label mt-1.5 h-2.5 w-2.5 flex-shrink-0 rounded-full"></span>
               {index < experiences.length - 1 && (
                 <span className="bg-bp-line mt-1 w-px flex-1"></span>
               )}
@@ -100,11 +100,11 @@ function Experience() {
                   <h3 className="text-bp-text font-mono text-sm font-bold sm:text-base">
                     {exp.title}
                   </h3>
-                  <p className="text-bp-accent font-mono text-sm">
+                  <p className="text-bp-label font-mono text-sm">
                     {exp.company}
                   </p>
                   <p className="text-bp-muted mt-0.5 flex items-center gap-1 font-mono text-[11px]">
-                    <MdLocationOn className="text-bp-accent flex-shrink-0" />
+                    <MdLocationOn className="text-bp-label flex-shrink-0" />
                     {exp.location} &middot; {exp.duration}
                   </p>
                 </div>
@@ -117,7 +117,7 @@ function Experience() {
                   {exp.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="text-bp-accent font-mono text-xs"
+                      className="text-bp-label font-mono text-xs"
                     >
                       [{tag}]
                     </span>

@@ -9,7 +9,7 @@ const education = [
     degree: "B.S. in Computer Science",
     school: "City College of New York",
     location: "New York, NY",
-    duration: "Graduation: December 2026",
+    duration: "December 2026",
     description:
       "Relevant Coursework: Data Structures, Algorithms, Operating Systems, Database Systems, Software Engineering, Statistics, Image Processing, Machine Learning, Artificial Intelligence, Big Data Management",
   },
@@ -26,7 +26,7 @@ function Education() {
         {education.map((edu, index) => (
           <div key={index} className="flex gap-4">
             <div className="flex w-3.5 flex-shrink-0 flex-col items-center">
-              <span className="bg-bp-accent mt-1.5 h-2.5 w-2.5 flex-shrink-0 rounded-full"></span>
+              <span className="bg-bp-label mt-1.5 h-2.5 w-2.5 flex-shrink-0 rounded-full"></span>
               {index < education.length - 1 && (
                 <span className="bg-bp-line mt-1 w-px flex-1"></span>
               )}
@@ -42,11 +42,11 @@ function Education() {
                   <h3 className="text-bp-text font-mono text-sm font-bold sm:text-base">
                     {edu.degree}
                   </h3>
-                  <p className="text-bp-accent font-mono text-sm">
+                  <p className="text-bp-label font-mono text-sm">
                     {edu.school}
                   </p>
                   <p className="text-bp-muted mt-0.5 flex items-center gap-1 font-mono text-[11px]">
-                    <MdLocationOn className="text-bp-accent flex-shrink-0" />
+                    <MdLocationOn className="text-bp-label flex-shrink-0" />
                     {edu.location} &middot; {edu.duration}
                   </p>
                 </div>
