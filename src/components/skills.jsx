@@ -10,6 +10,7 @@ const skillCategories = [
       { name: "Python", img: technologies.python },
       { name: "Java", img: technologies.java },
       { name: "C++", img: technologies.cplusplus },
+      { name: "SQL", img: technologies.database },
     ],
   },
   {
@@ -32,6 +33,7 @@ const skillCategories = [
       { name: "Flask", img: technologies.flask, invert: true },
       { name: "Django", img: technologies.django, invert: true },
       { name: "GraphQL", img: technologies.graphql },
+      { name: "FastAPI", img: technologies.fastapi },
     ],
   },
   {
@@ -45,6 +47,7 @@ const skillCategories = [
       { name: "Kubernetes", img: technologies.kubernetes },
       { name: "AWS", img: technologies.aws },
       { name: "Kafka", img: technologies.kafka, invert: true },
+      { name: "Datadog", img: technologies.datadog },
     ],
   },
   {
@@ -53,6 +56,7 @@ const skillCategories = [
       { name: "Pandas", img: technologies.pandas },
       { name: "Scikit-learn", img: technologies.scikit },
       { name: "TensorFlow", img: technologies.tensorflow },
+      { name: "CUDA", img: technologies.nvidia },
       { name: "Selenium", img: technologies.selenium },
       { name: "Git", img: technologies.git },
     ],
@@ -94,12 +98,14 @@ const Skills = () => {
                   key={tech.name}
                   className="inline-flex items-center gap-2 rounded border border-bp-line bg-bp-chip px-3 py-1.5 font-mono text-xs text-bp-text transition-colors duration-300 hover:border-bp-accent"
                 >
-                  <img
-                    className={`h-5 w-5 flex-shrink-0 object-contain ${tech.invert ? "invert" : ""}`}
-                    src={tech.img}
-                    alt=""
-                    loading="lazy"
-                  />
+                  {tech.img && (
+                    <img
+                      className={`h-5 w-5 flex-shrink-0 object-contain ${tech.invert ? "invert" : ""}`}
+                      src={tech.img}
+                      alt=""
+                      loading="lazy"
+                    />
+                  )}
                   {tech.name}
                 </span>
               ))}

@@ -26,6 +26,7 @@ const experiences = [
       "AWS",
       "Kubernetes",
       "Docker",
+      "Datadog",
     ],
   },
   {
@@ -112,7 +113,7 @@ function Experience() {
                 {exp.description}
               </p>
               {exp.tags.length > 0 && (
-                <div className="mt-2 flex flex-wrap gap-x-3 gap-y-1">
+                <div className="mt-2 flex max-w-2xl flex-wrap gap-x-3 gap-y-1">
                   {exp.tags.map((tag) => (
                     <span
                       key={tag}

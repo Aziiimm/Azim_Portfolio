@@ -27,6 +27,10 @@ import graphql from "./graphql.svg";
 import kafka from "./apachekafka.svg";
 import nestjs from "./nestjs.svg";
 import kubernetes from "./kubernetes.svg";
+import fastapi from "./fastapi.svg";
+import datadog from "./datadog.svg";
+import nvidia from "./nvidia.svg";
+import database from "./sql.svg";
 
 export {
   python,
@@ -50,6 +54,10 @@ export {
   kafka,
   nestjs,
   kubernetes,
+  fastapi,
+  datadog,
+  nvidia,
+  database,
   aws,
   docker,
   git,
